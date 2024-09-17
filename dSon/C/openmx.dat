@@ -1,0 +1,72 @@
+#
+#      File Name      
+#
+
+System.CurrrentDirectory         ./    # default=./
+System.Name                      T-graphene
+DATA.PATH                      /home/gengbin_32346034_stl_155/softwares/openmx3.9/DFT_DATA19/
+level.of.stdout                   1    # default=1 (1-3)
+level.of.fileout                  1    # default=1 (0-2)
+HS.fileout                   on       # on|off, default=off
+
+#
+# SCF or Electronic System
+#
+
+scf.XcType                  GGA-PBE    # LDA|LSDA-CA|LSDA-PW|GGA-PBE
+scf.partialCoreCorrection   on 
+scf.SpinPolarization        off        # On|Off|NC
+scf.ElectronicTemperature  300.0       # default=300 (K)
+scf.energycutoff           200.0       # default=150 (Ry)
+scf.maxIter                 300         # default=40
+scf.EigenvalueSolver       Band    # DC|GDC|Cluster|Band
+scf.Kgrid                  6 6 1       # means 4x4x4
+scf.Mixing.Type           rmm-diis     # Simple|Rmm-Diis|Gr-Pulay|Kerker|Rmm-Diisk
+scf.Init.Mixing.Weight     0.0010      # default=0.30 
+scf.Min.Mixing.Weight      0.0001      # default=0.001 
+scf.Max.Mixing.Weight      0.3000      # default=0.40 
+scf.Mixing.History           50
+scf.Mixing.StartPulay        30
+scf.Mixing.EveryPulay        1
+scf.criterion             1.0e-14      # default=1.0e-6 (Hartree)
+
+
+#
+# MD or Geometry Optimization
+#
+
+MD.Type                      Nomd        # Nomd|Opt|NVE|NVT_VS|NVT_NH
+                                       # Constraint_Opt|DIIS2|Constraint_DIIS2
+MD.Opt.DIIS.History          4
+MD.Opt.StartDIIS             5         # default=5
+MD.maxIter                 100         # default=1
+MD.TimeStep                1.0         # default=0.5 (fs)
+MD.Opt.criterion          1.0e-4       # default=1.0e-4 (Hartree/bohr)
+
+
+
+#
+# Definition of Atomic Species
+#
+Species.Number       1
+<Definition.of.Atomic.Species
+C   C6.0-s2p2d1       C_PBE19
+Definition.of.Atomic.Species>
+
+#
+# Atoms
+#
+Atoms.Number           4
+Atoms.SpeciesAndCoordinates.Unit   Ang # Ang|AU
+<Atoms.SpeciesAndCoordinates           # Unit=Ang.
+  1  C   1.7233617   1.7233617  10.0000000   2.00   2.00
+  2  C   1.7243617   1.7233617  10.0000000   2.00   2.00
+  3  C   1.7233617   1.7243617  10.0000000   2.00   2.00
+  4  C   1.7233617   1.7233617  10.0010000   2.00   2.00
+Atoms.SpeciesAndCoordinates>
+Atoms.UnitVectors.Unit             Ang #  Ang|AU
+<Atoms.UnitVectors                     # unit=Ang.
+       3.4467235   0.0000000   0.0000000
+       0.0000000   3.4467235   0.0000000
+       0.0000000   0.0000000  20.0000000
+Atoms.UnitVectors>

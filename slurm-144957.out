@@ -1,0 +1,153 @@
+Time is Tue Sep 17 16:27:38 CST 2024
+Directory is /home/gengbin_32346034_stl_155/ML/temp
+This job runs on the following nodes:
+node6
+ 
+:: WARNING: setvars.sh has already been run. Skipping re-execution.
+   To force a re-execution of setvars.sh, use the '--force' option.
+   Using '--force' can result in excessive use of your environment variables.
+  
+usage: source setvars.sh [--force] [--config=file] [--help] [...]
+  --force        Force setvars.sh to re-run, doing so may overload environment.
+  --config=file  Customize env vars using a setvars.sh configuration file.
+  --help         Display this help message and exit.
+  ...            Additional args are passed to individual env/vars.sh scripts
+                 and should follow this script's arguments.
+  
+  Some POSIX shells do not accept command-line options. In that case, you can pass
+  command-line options via the SETVARS_ARGS environment variable. For example:
+  
+  $ SETVARS_ARGS="ia32 --config=config.txt" ; export SETVARS_ARGS
+  $ . path/to/setvars.sh
+  
+  The SETVARS_ARGS environment variable is cleared on exiting setvars.sh.
+  
+Traceback (most recent call last):
+  File "/home/gengbin_32346034_stl_155/softwares/miniconda3/envs/HamEPC/bin/HamEPC", line 33, in <module>
+    sys.exit(load_entry_point('HamEPC==0.1', 'console_scripts', 'HamEPC')())
+  File "/home/gengbin_32346034_stl_155/softwares/miniconda3/envs/HamEPC/lib/python3.9/site-packages/HamEPC-0.1-py3.9.egg/HamEPC/run_EPC.py", line 27, in main
+  File "/home/gengbin_32346034_stl_155/softwares/miniconda3/envs/HamEPC/lib/python3.9/site-packages/HamEPC-0.1-py3.9.egg/HamEPC/EPC_calculator.py", line 477, in run
+  File "/home/gengbin_32346034_stl_155/softwares/miniconda3/envs/HamEPC/lib/python3.9/site-packages/HamEPC-0.1-py3.9.egg/HamEPC/EPC_calculator.py", line 1459, in superconductivity_cal
+  File "/home/gengbin_32346034_stl_155/softwares/miniconda3/envs/HamEPC/lib/python3.9/site-packages/HamEPC-0.1-py3.9.egg/HamEPC/EPC_calculator.py", line 1300, in eliashberg_spectrum_cal_sparse
+IndexError: index 4 is out of bounds for axis 4 with size 4
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/home/gengbin_32346034_stl_155/softwares/miniconda3/envs/HamEPC/bin/HamEPC", line 33, in <module>
+  File "/home/gengbin_32346034_stl_155/softwares/miniconda3/envs/HamEPC/bin/HamEPC", line 33, in <module>
+    sys.exit(load_entry_point('HamEPC==0.1', 'console_scripts', 'HamEPC')())
+  File "/home/gengbin_32346034_stl_155/softwares/miniconda3/envs/HamEPC/lib/python3.9/site-packages/HamEPC-0.1-py3.9.egg/HamEPC/run_EPC.py", line 27, in main
+  File "/home/gengbin_32346034_stl_155/softwares/miniconda3/envs/HamEPC/lib/python3.9/site-packages/HamEPC-0.1-py3.9.egg/HamEPC/EPC_calculator.py", line 477, in run
+  File "/home/gengbin_32346034_stl_155/softwares/miniconda3/envs/HamEPC/lib/python3.9/site-packages/HamEPC-0.1-py3.9.egg/HamEPC/EPC_calculator.py", line 1459, in superconductivity_cal
+  File "/home/gengbin_32346034_stl_155/softwares/miniconda3/envs/HamEPC/lib/python3.9/site-packages/HamEPC-0.1-py3.9.egg/HamEPC/EPC_calculator.py", line 1300, in eliashberg_spectrum_cal_sparse
+IndexError: index 4 is out of bounds for axis 4 with size 4
+Traceback (most recent call last):
+  File "/home/gengbin_32346034_stl_155/softwares/miniconda3/envs/HamEPC/bin/HamEPC", line 33, in <module>
+    sys.exit(load_entry_point('HamEPC==0.1', 'console_scripts', 'HamEPC')())
+  File "/home/gengbin_32346034_stl_155/softwares/miniconda3/envs/HamEPC/lib/python3.9/site-packages/HamEPC-0.1-py3.9.egg/HamEPC/run_EPC.py", line 27, in main
+  File "/home/gengbin_32346034_stl_155/softwares/miniconda3/envs/HamEPC/lib/python3.9/site-packages/HamEPC-0.1-py3.9.egg/HamEPC/EPC_calculator.py", line 477, in run
+  File "/home/gengbin_32346034_stl_155/softwares/miniconda3/envs/HamEPC/lib/python3.9/site-packages/HamEPC-0.1-py3.9.egg/HamEPC/EPC_calculator.py", line 1459, in superconductivity_cal
+  File "/home/gengbin_32346034_stl_155/softwares/miniconda3/envs/HamEPC/lib/python3.9/site-packages/HamEPC-0.1-py3.9.egg/HamEPC/EPC_calculator.py", line 1300, in eliashberg_spectrum_cal_sparse
+IndexError: index 4 is out of bounds for axis 4 with size 4
+    sys.exit(load_entry_point('HamEPC==0.1', 'console_scripts', 'HamEPC')())
+  File "/home/gengbin_32346034_stl_155/softwares/miniconda3/envs/HamEPC/lib/python3.9/site-packages/HamEPC-0.1-py3.9.egg/HamEPC/run_EPC.py", line 27, in main
+  File "/home/gengbin_32346034_stl_155/softwares/miniconda3/envs/HamEPC/lib/python3.9/site-packages/HamEPC-0.1-py3.9.egg/HamEPC/EPC_calculator.py", line 477, in run
+  File "/home/gengbin_32346034_stl_155/softwares/miniconda3/envs/HamEPC/lib/python3.9/site-packages/HamEPC-0.1-py3.9.egg/HamEPC/EPC_calculator.py", line 1459, in superconductivity_cal
+  File "/home/gengbin_32346034_stl_155/softwares/miniconda3/envs/HamEPC/lib/python3.9/site-packages/HamEPC-0.1-py3.9.egg/HamEPC/EPC_calculator.py", line 1300, in eliashberg_spectrum_cal_sparse
+IndexError: index 4 is out of bounds for axis 4 with size 4
+Traceback (most recent call last):
+  File "/home/gengbin_32346034_stl_155/softwares/miniconda3/envs/HamEPC/bin/HamEPC", line 33, in <module>
+    sys.exit(load_entry_point('HamEPC==0.1', 'console_scripts', 'HamEPC')())
+  File "/home/gengbin_32346034_stl_155/softwares/miniconda3/envs/HamEPC/lib/python3.9/site-packages/HamEPC-0.1-py3.9.egg/HamEPC/run_EPC.py", line 27, in main
+  File "/home/gengbin_32346034_stl_155/softwares/miniconda3/envs/HamEPC/lib/python3.9/site-packages/HamEPC-0.1-py3.9.egg/HamEPC/EPC_calculator.py", line 477, in run
+  File "/home/gengbin_32346034_stl_155/softwares/miniconda3/envs/HamEPC/lib/python3.9/site-packages/HamEPC-0.1-py3.9.egg/HamEPC/EPC_calculator.py", line 1459, in superconductivity_cal
+  File "/home/gengbin_32346034_stl_155/softwares/miniconda3/envs/HamEPC/lib/python3.9/site-packages/HamEPC-0.1-py3.9.egg/HamEPC/EPC_calculator.py", line 1300, in eliashberg_spectrum_cal_sparse
+IndexError: index 4 is out of bounds for axis 4 with size 4
+Traceback (most recent call last):
+  File "/home/gengbin_32346034_stl_155/softwares/miniconda3/envs/HamEPC/bin/HamEPC", line 33, in <module>
+Traceback (most recent call last):
+  File "/home/gengbin_32346034_stl_155/softwares/miniconda3/envs/HamEPC/bin/HamEPC", line 33, in <module>
+    sys.exit(load_entry_point('HamEPC==0.1', 'console_scripts', 'HamEPC')())
+  File "/home/gengbin_32346034_stl_155/softwares/miniconda3/envs/HamEPC/lib/python3.9/site-packages/HamEPC-0.1-py3.9.egg/HamEPC/run_EPC.py", line 27, in main
+  File "/home/gengbin_32346034_stl_155/softwares/miniconda3/envs/HamEPC/lib/python3.9/site-packages/HamEPC-0.1-py3.9.egg/HamEPC/EPC_calculator.py", line 477, in run
+  File "/home/gengbin_32346034_stl_155/softwares/miniconda3/envs/HamEPC/lib/python3.9/site-packages/HamEPC-0.1-py3.9.egg/HamEPC/EPC_calculator.py", line 1459, in superconductivity_cal
+  File "/home/gengbin_32346034_stl_155/softwares/miniconda3/envs/HamEPC/lib/python3.9/site-packages/HamEPC-0.1-py3.9.egg/HamEPC/EPC_calculator.py", line 1300, in eliashberg_spectrum_cal_sparse
+IndexError: index 4 is out of bounds for axis 4 with size 4
+Traceback (most recent call last):
+  File "/home/gengbin_32346034_stl_155/softwares/miniconda3/envs/HamEPC/bin/HamEPC", line 33, in <module>
+Traceback (most recent call last):
+  File "/home/gengbin_32346034_stl_155/softwares/miniconda3/envs/HamEPC/bin/HamEPC", line 33, in <module>
+    sys.exit(load_entry_point('HamEPC==0.1', 'console_scripts', 'HamEPC')())
+  File "/home/gengbin_32346034_stl_155/softwares/miniconda3/envs/HamEPC/lib/python3.9/site-packages/HamEPC-0.1-py3.9.egg/HamEPC/run_EPC.py", line 27, in main
+  File "/home/gengbin_32346034_stl_155/softwares/miniconda3/envs/HamEPC/lib/python3.9/site-packages/HamEPC-0.1-py3.9.egg/HamEPC/EPC_calculator.py", line 477, in run
+  File "/home/gengbin_32346034_stl_155/softwares/miniconda3/envs/HamEPC/lib/python3.9/site-packages/HamEPC-0.1-py3.9.egg/HamEPC/EPC_calculator.py", line 1459, in superconductivity_cal
+  File "/home/gengbin_32346034_stl_155/softwares/miniconda3/envs/HamEPC/lib/python3.9/site-packages/HamEPC-0.1-py3.9.egg/HamEPC/EPC_calculator.py", line 1300, in eliashberg_spectrum_cal_sparse
+IndexError: index 4 is out of bounds for axis 4 with size 4
+    sys.exit(load_entry_point('HamEPC==0.1', 'console_scripts', 'HamEPC')())
+  File "/home/gengbin_32346034_stl_155/softwares/miniconda3/envs/HamEPC/lib/python3.9/site-packages/HamEPC-0.1-py3.9.egg/HamEPC/run_EPC.py", line 27, in main
+  File "/home/gengbin_32346034_stl_155/softwares/miniconda3/envs/HamEPC/lib/python3.9/site-packages/HamEPC-0.1-py3.9.egg/HamEPC/EPC_calculator.py", line 477, in run
+  File "/home/gengbin_32346034_stl_155/softwares/miniconda3/envs/HamEPC/lib/python3.9/site-packages/HamEPC-0.1-py3.9.egg/HamEPC/EPC_calculator.py", line 1459, in superconductivity_cal
+  File "/home/gengbin_32346034_stl_155/softwares/miniconda3/envs/HamEPC/lib/python3.9/site-packages/HamEPC-0.1-py3.9.egg/HamEPC/EPC_calculator.py", line 1300, in eliashberg_spectrum_cal_sparse
+IndexError: index 4 is out of bounds for axis 4 with size 4
+    sys.exit(load_entry_point('HamEPC==0.1', 'console_scripts', 'HamEPC')())
+  File "/home/gengbin_32346034_stl_155/softwares/miniconda3/envs/HamEPC/lib/python3.9/site-packages/HamEPC-0.1-py3.9.egg/HamEPC/run_EPC.py", line 27, in main
+  File "/home/gengbin_32346034_stl_155/softwares/miniconda3/envs/HamEPC/lib/python3.9/site-packages/HamEPC-0.1-py3.9.egg/HamEPC/EPC_calculator.py", line 477, in run
+  File "/home/gengbin_32346034_stl_155/softwares/miniconda3/envs/HamEPC/lib/python3.9/site-packages/HamEPC-0.1-py3.9.egg/HamEPC/EPC_calculator.py", line 1459, in superconductivity_cal
+  File "/home/gengbin_32346034_stl_155/softwares/miniconda3/envs/HamEPC/lib/python3.9/site-packages/HamEPC-0.1-py3.9.egg/HamEPC/EPC_calculator.py", line 1300, in eliashberg_spectrum_cal_sparse
+IndexError: index 4 is out of bounds for axis 4 with size 4
+Traceback (most recent call last):
+  File "/home/gengbin_32346034_stl_155/softwares/miniconda3/envs/HamEPC/bin/HamEPC", line 33, in <module>
+    sys.exit(load_entry_point('HamEPC==0.1', 'console_scripts', 'HamEPC')())
+  File "/home/gengbin_32346034_stl_155/softwares/miniconda3/envs/HamEPC/lib/python3.9/site-packages/HamEPC-0.1-py3.9.egg/HamEPC/run_EPC.py", line 27, in main
+  File "/home/gengbin_32346034_stl_155/softwares/miniconda3/envs/HamEPC/lib/python3.9/site-packages/HamEPC-0.1-py3.9.egg/HamEPC/EPC_calculator.py", line 477, in run
+  File "/home/gengbin_32346034_stl_155/softwares/miniconda3/envs/HamEPC/lib/python3.9/site-packages/HamEPC-0.1-py3.9.egg/HamEPC/EPC_calculator.py", line 1459, in superconductivity_cal
+  File "/home/gengbin_32346034_stl_155/softwares/miniconda3/envs/HamEPC/lib/python3.9/site-packages/HamEPC-0.1-py3.9.egg/HamEPC/EPC_calculator.py", line 1300, in eliashberg_spectrum_cal_sparse
+IndexError: index 4 is out of bounds for axis 4 with size 4
+Traceback (most recent call last):
+  File "/home/gengbin_32346034_stl_155/softwares/miniconda3/envs/HamEPC/bin/HamEPC", line 33, in <module>
+    sys.exit(load_entry_point('HamEPC==0.1', 'console_scripts', 'HamEPC')())
+  File "/home/gengbin_32346034_stl_155/softwares/miniconda3/envs/HamEPC/lib/python3.9/site-packages/HamEPC-0.1-py3.9.egg/HamEPC/run_EPC.py", line 27, in main
+  File "/home/gengbin_32346034_stl_155/softwares/miniconda3/envs/HamEPC/lib/python3.9/site-packages/HamEPC-0.1-py3.9.egg/HamEPC/EPC_calculator.py", line 477, in run
+  File "/home/gengbin_32346034_stl_155/softwares/miniconda3/envs/HamEPC/lib/python3.9/site-packages/HamEPC-0.1-py3.9.egg/HamEPC/EPC_calculator.py", line 1459, in superconductivity_cal
+  File "/home/gengbin_32346034_stl_155/softwares/miniconda3/envs/HamEPC/lib/python3.9/site-packages/HamEPC-0.1-py3.9.egg/HamEPC/EPC_calculator.py", line 1300, in eliashberg_spectrum_cal_sparse
+IndexError: index 4 is out of bounds for axis 4 with size 4
+################################################## Superconductivity Calculation ##################################################
+Traceback (most recent call last):
+  File "/home/gengbin_32346034_stl_155/softwares/miniconda3/envs/HamEPC/bin/HamEPC", line 33, in <module>
+    sys.exit(load_entry_point('HamEPC==0.1', 'console_scripts', 'HamEPC')())
+  File "/home/gengbin_32346034_stl_155/softwares/miniconda3/envs/HamEPC/lib/python3.9/site-packages/HamEPC-0.1-py3.9.egg/HamEPC/run_EPC.py", line 27, in main
+  File "/home/gengbin_32346034_stl_155/softwares/miniconda3/envs/HamEPC/lib/python3.9/site-packages/HamEPC-0.1-py3.9.egg/HamEPC/EPC_calculator.py", line 477, in run
+  File "/home/gengbin_32346034_stl_155/softwares/miniconda3/envs/HamEPC/lib/python3.9/site-packages/HamEPC-0.1-py3.9.egg/HamEPC/EPC_calculator.py", line 1459, in superconductivity_cal
+  File "/home/gengbin_32346034_stl_155/softwares/miniconda3/envs/HamEPC/lib/python3.9/site-packages/HamEPC-0.1-py3.9.egg/HamEPC/EPC_calculator.py", line 1300, in eliashberg_spectrum_cal_sparse
+IndexError: index 4 is out of bounds for axis 4 with size 4
+Traceback (most recent call last):
+  File "/home/gengbin_32346034_stl_155/softwares/miniconda3/envs/HamEPC/bin/HamEPC", line 33, in <module>
+    sys.exit(load_entry_point('HamEPC==0.1', 'console_scripts', 'HamEPC')())
+  File "/home/gengbin_32346034_stl_155/softwares/miniconda3/envs/HamEPC/lib/python3.9/site-packages/HamEPC-0.1-py3.9.egg/HamEPC/run_EPC.py", line 27, in main
+  File "/home/gengbin_32346034_stl_155/softwares/miniconda3/envs/HamEPC/lib/python3.9/site-packages/HamEPC-0.1-py3.9.egg/HamEPC/EPC_calculator.py", line 477, in run
+  File "/home/gengbin_32346034_stl_155/softwares/miniconda3/envs/HamEPC/lib/python3.9/site-packages/HamEPC-0.1-py3.9.egg/HamEPC/EPC_calculator.py", line 1459, in superconductivity_cal
+  File "/home/gengbin_32346034_stl_155/softwares/miniconda3/envs/HamEPC/lib/python3.9/site-packages/HamEPC-0.1-py3.9.egg/HamEPC/EPC_calculator.py", line 1300, in eliashberg_spectrum_cal_sparse
+IndexError: index 4 is out of bounds for axis 4 with size 4
+Traceback (most recent call last):
+  File "/home/gengbin_32346034_stl_155/softwares/miniconda3/envs/HamEPC/bin/HamEPC", line 33, in <module>
+    sys.exit(load_entry_point('HamEPC==0.1', 'console_scripts', 'HamEPC')())
+  File "/home/gengbin_32346034_stl_155/softwares/miniconda3/envs/HamEPC/lib/python3.9/site-packages/HamEPC-0.1-py3.9.egg/HamEPC/run_EPC.py", line 27, in main
+  File "/home/gengbin_32346034_stl_155/softwares/miniconda3/envs/HamEPC/lib/python3.9/site-packages/HamEPC-0.1-py3.9.egg/HamEPC/EPC_calculator.py", line 477, in run
+  File "/home/gengbin_32346034_stl_155/softwares/miniconda3/envs/HamEPC/lib/python3.9/site-packages/HamEPC-0.1-py3.9.egg/HamEPC/EPC_calculator.py", line 1459, in superconductivity_cal
+  File "/home/gengbin_32346034_stl_155/softwares/miniconda3/envs/HamEPC/lib/python3.9/site-packages/HamEPC-0.1-py3.9.egg/HamEPC/EPC_calculator.py", line 1300, in eliashberg_spectrum_cal_sparse
+IndexError: index 4 is out of bounds for axis 4 with size 4
+Traceback (most recent call last):
+  File "/home/gengbin_32346034_stl_155/softwares/miniconda3/envs/HamEPC/bin/HamEPC", line 33, in <module>
+    sys.exit(load_entry_point('HamEPC==0.1', 'console_scripts', 'HamEPC')())
+  File "/home/gengbin_32346034_stl_155/softwares/miniconda3/envs/HamEPC/lib/python3.9/site-packages/HamEPC-0.1-py3.9.egg/HamEPC/run_EPC.py", line 27, in main
+  File "/home/gengbin_32346034_stl_155/softwares/miniconda3/envs/HamEPC/lib/python3.9/site-packages/HamEPC-0.1-py3.9.egg/HamEPC/EPC_calculator.py", line 477, in run
+  File "/home/gengbin_32346034_stl_155/softwares/miniconda3/envs/HamEPC/lib/python3.9/site-packages/HamEPC-0.1-py3.9.egg/HamEPC/EPC_calculator.py", line 1459, in superconductivity_cal
+  File "/home/gengbin_32346034_stl_155/softwares/miniconda3/envs/HamEPC/lib/python3.9/site-packages/HamEPC-0.1-py3.9.egg/HamEPC/EPC_calculator.py", line 1300, in eliashberg_spectrum_cal_sparse
+IndexError: index 4 is out of bounds for axis 4 with size 4
+Traceback (most recent call last):
+  File "/home/gengbin_32346034_stl_155/softwares/miniconda3/envs/HamEPC/bin/HamEPC", line 33, in <module>
+    sys.exit(load_entry_point('HamEPC==0.1', 'console_scripts', 'HamEPC')())
+  File "/home/gengbin_32346034_stl_155/softwares/miniconda3/envs/HamEPC/lib/python3.9/site-packages/HamEPC-0.1-py3.9.egg/HamEPC/run_EPC.py", line 27, in main
+  File "/home/gengbin_32346034_stl_155/softwares/miniconda3/envs/HamEPC/lib/python3.9/site-packages/HamEPC-0.1-py3.9.egg/HamEPC/EPC_calculator.py", line 477, in run
+  File "/home/gengbin_32346034_stl_155/softwares/miniconda3/envs/HamEPC/lib/python3.9/site-packages/HamEPC-0.1-py3.9.egg/HamEPC/EPC_calculator.py", line 1459, in superconductivity_cal
+  File "/home/gengbin_32346034_stl_155/softwares/miniconda3/envs/HamEPC/lib/python3.9/site-packages/HamEPC-0.1-py3.9.egg/HamEPC/EPC_calculator.py", line 1300, in eliashberg_spectrum_cal_sparse
+IndexError: index 4 is out of bounds for axis 4 with size 4

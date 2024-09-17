@@ -1,0 +1,126 @@
+
+The number of threads in each node for OpenMP parallelization is 1.
+
+
+*******************************************************
+*******************************************************
+ Welcome to OpenMX   Ver. 3.9                           
+ Copyright (C), 2002-2019, T. Ozaki                    
+ OpenMX comes with ABSOLUTELY NO WARRANTY.             
+ This is free software, and you are welcome to         
+ redistribute it under the constitution of the GNU-GPL.
+*******************************************************
+*******************************************************
+
+
+
+<Input_std>  Your input file was normally read.
+<Input_std>  The system includes 1 species and 4 atoms.
+
+*******************************************************
+                     PAO and VPS                       
+*******************************************************
+
+<SetPara_DFT>  PAOs of species C were normally found.
+<SetPara_DFT>  VPSs of species C were normally found.
+               C_PBE19.vps is j-dependent.
+               In case of scf.SpinOrbit.Coupling=off,
+               j-dependent pseudo potentials are averaged by j-degeneracy,
+               which corresponds to a scalar relativistic treatment.
+
+*******************************************************
+     Fourier transform of PAO and projectors of VNL    
+*******************************************************
+
+<FT_PAO>          Fourier transform of pseudo atomic orbitals
+<FT_NLP>          Fourier transform of non-local projectors
+<FT_ProExpn_VNA>  Fourier transform of VNA separable projectors
+<FT_VNA>          Fourier transform of VNA potentials
+<FT_ProductPAO>   Fourier transform of product of PAOs
+
+*******************************************************
+  Allocation of atoms to proccesors at MD_iter=    1     
+*******************************************************
+
+ proc =   0  # of atoms=   4  estimated weight=         4.00000
+
+
+
+
+*******************************************************
+        Analysis of neighbors and setting of grids        
+*******************************************************
+
+TFNAN=     140   Average FNAN=  35.00000
+TSNAN=       0   Average SNAN=   0.00000
+<truncation> CpyCell= 1 ct_AN=   1 FNAN SNAN  35   0
+<truncation> CpyCell= 1 ct_AN=   2 FNAN SNAN  35   0
+<truncation> CpyCell= 1 ct_AN=   3 FNAN SNAN  35   0
+<truncation> CpyCell= 1 ct_AN=   4 FNAN SNAN  35   0
+TFNAN=     140   Average FNAN=  35.00000
+TSNAN=       0   Average SNAN=   0.00000
+<truncation> CpyCell= 2 ct_AN=   1 FNAN SNAN  35   0
+<truncation> CpyCell= 2 ct_AN=   2 FNAN SNAN  35   0
+<truncation> CpyCell= 2 ct_AN=   3 FNAN SNAN  35   0
+<truncation> CpyCell= 2 ct_AN=   4 FNAN SNAN  35   0
+TFNAN=     140   Average FNAN=  35.00000
+TSNAN=       0   Average SNAN=   0.00000
+<truncation> CpyCell= 2 ct_AN=   1 FNAN SNAN  35   0
+<truncation> CpyCell= 2 ct_AN=   2 FNAN SNAN  35   0
+<truncation> CpyCell= 2 ct_AN=   3 FNAN SNAN  35   0
+<truncation> CpyCell= 2 ct_AN=   4 FNAN SNAN  35   0
+<Check_System> The system is slab.
+lattice vectors (bohr)
+A  =  6.513362973396,  0.000000000000,  0.000000000000
+B  =  0.000000000000,  6.513362973396,  0.000000000000
+C  =  0.000000000000,  0.000000000000, 37.794519771578
+reciprocal lattice vectors (bohr^-1)
+RA =  0.964660703364,  0.000000000000,  0.000000000000
+RB =  0.000000000000,  0.964660703364,  0.000000000000
+RC =  0.000000000000,  0.000000000000,  0.166245935791
+Grid_Origin  0.109028386567  0.109028386567  0.112956121294
+Cell_Volume =   1603.390822389727 (Bohr^3)
+GridVol     =      0.010604436656 (Bohr^3)
+Grid_Origin  0.109028386567  0.109028386567  0.112956121294
+Cell_Volume =   1603.390822389727 (Bohr^3)
+GridVol     =      0.010604436656 (Bohr^3)
+<UCell_Box> Info. of cutoff energy and num. of grids
+lattice vectors (bohr)
+A  =  6.513362973396,  0.000000000000,  0.000000000000
+B  =  0.000000000000,  6.513362973396,  0.000000000000
+C  =  0.000000000000,  0.000000000000, 37.794519771578
+reciprocal lattice vectors (bohr^-1)
+RA =  0.964660703364,  0.000000000000,  0.000000000000
+RB =  0.000000000000,  0.964660703364,  0.000000000000
+RC =  0.000000000000,  0.000000000000,  0.166245935791
+Required cutoff energy (Ryd) for 3D-grids = 200.0000
+    Used cutoff energy (Ryd) for 3D-grids = 209.3783, 209.3783, 195.0117
+Num. of grids of a-, b-, and c-axes = 30, 30, 168
+Grid_Origin  0.109028386567  0.109028386567  0.112956121294
+Cell_Volume =   1603.390822389727 (Bohr^3)
+GridVol     =      0.010604436656 (Bohr^3)
+Cell vectors (bohr) of the grid cell (gtv)
+  gtv_a =  0.217112099113,  0.000000000000,  0.000000000000
+  gtv_b =  0.000000000000,  0.217112099113,  0.000000000000
+  gtv_c =  0.000000000000,  0.000000000000,  0.224967379593
+  |gtv_a| =  0.217112099113
+  |gtv_b| =  0.217112099113
+  |gtv_c| =  0.224967379593
+Num. of grids overlapping with atom    1 = 85326
+Num. of grids overlapping with atom    2 = 85330
+Num. of grids overlapping with atom    3 = 85330
+Num. of grids overlapping with atom    4 = 85333
+
+ Calculate S and H0 ...
+
+*******************************************************
+             SCF calculation at MD = 1                
+*******************************************************
+
+<MD= 1>  Calculation of the overlap matrix
+<MD= 1>  Calculation of the nonlocal matrix
+<MD= 1>  Calculation of the VNA projector matrix
+<Set_Hamiltonian>  Hamiltonian matrix for VNA+dVH+Vxc...
+Save the scfout file (overlap.scfout)
+
+ Finish calculating S & H0

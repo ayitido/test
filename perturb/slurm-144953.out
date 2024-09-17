@@ -1,0 +1,2845 @@
+Time is Tue Sep 17 15:44:11 CST 2024
+Directory is /home/gengbin_32346034_stl_155/ML/temp/perturb
+This job runs on the following nodes:
+node6
+ 
+:: WARNING: setvars.sh has already been run. Skipping re-execution.
+   To force a re-execution of setvars.sh, use the '--force' option.
+   Using '--force' can result in excessive use of your environment variables.
+  
+usage: source setvars.sh [--force] [--config=file] [--help] [...]
+  --force        Force setvars.sh to re-run, doing so may overload environment.
+  --config=file  Customize env vars using a setvars.sh configuration file.
+  --help         Display this help message and exit.
+  ...            Additional args are passed to individual env/vars.sh scripts
+                 and should follow this script's arguments.
+  
+  Some POSIX shells do not accept command-line options. In that case, you can pass
+  command-line options via the SETVARS_ARGS environment variable. For example:
+  
+  $ SETVARS_ARGS="ia32 --config=config.txt" ; export SETVARS_ARGS
+  $ . path/to/setvars.sh
+  
+  The SETVARS_ARGS environment variable is cleared on exiting setvars.sh.
+  
+
+The number of threads in each node for OpenMP parallelization is 1.
+
+
+*******************************************************
+*******************************************************
+ Welcome to OpenMX   Ver. 3.9                           
+ Copyright (C), 2002-2019, T. Ozaki                    
+ OpenMX comes with ABSOLUTELY NO WARRANTY.             
+ This is free software, and you are welcome to         
+ redistribute it under the constitution of the GNU-GPL.
+*******************************************************
+*******************************************************
+
+
+
+<Input_std>  Your input file was normally read.
+<Input_std>  The system includes 1 species and 36 atoms.
+
+*******************************************************
+                     PAO and VPS                       
+*******************************************************
+
+<SetPara_DFT>  PAOs of species C were normally found.
+<SetPara_DFT>  VPSs of species C were normally found.
+               C_PBE19.vps is j-dependent.
+               In case of scf.SpinOrbit.Coupling=off,
+               j-dependent pseudo potentials are averaged by j-degeneracy,
+               which corresponds to a scalar relativistic treatment.
+
+*******************************************************
+     Fourier transform of PAO and projectors of VNL    
+*******************************************************
+
+<FT_PAO>          Fourier transform of pseudo atomic orbitals
+<FT_NLP>          Fourier transform of non-local projectors
+<FT_ProExpn_VNA>  Fourier transform of VNA separable projectors
+<FT_VNA>          Fourier transform of VNA potentials
+<FT_ProductPAO>   Fourier transform of product of PAOs
+
+*******************************************************
+  Allocation of atoms to proccesors at MD_iter=    1     
+*******************************************************
+
+ proc =   0  # of atoms=   2  estimated weight=         2.00000
+ proc =   1  # of atoms=   2  estimated weight=         2.00000
+ proc =   2  # of atoms=   2  estimated weight=         2.00000
+ proc =   3  # of atoms=   3  estimated weight=         3.00000
+ proc =   4  # of atoms=   2  estimated weight=         2.00000
+ proc =   5  # of atoms=   2  estimated weight=         2.00000
+ proc =   6  # of atoms=   2  estimated weight=         2.00000
+ proc =   7  # of atoms=   3  estimated weight=         3.00000
+ proc =   8  # of atoms=   2  estimated weight=         2.00000
+ proc =   9  # of atoms=   2  estimated weight=         2.00000
+ proc =  10  # of atoms=   2  estimated weight=         2.00000
+ proc =  11  # of atoms=   3  estimated weight=         3.00000
+ proc =  12  # of atoms=   2  estimated weight=         2.00000
+ proc =  13  # of atoms=   2  estimated weight=         2.00000
+ proc =  14  # of atoms=   2  estimated weight=         2.00000
+ proc =  15  # of atoms=   3  estimated weight=         3.00000
+
+
+
+
+*******************************************************
+        Analysis of neighbors and setting of grids        
+*******************************************************
+
+TFNAN=    1584   Average FNAN=  44.00000
+TSNAN=       0   Average SNAN=   0.00000
+<truncation> CpyCell= 1 ct_AN=   1 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=   2 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=   3 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=   4 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=   5 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=   6 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=   7 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=   8 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=   9 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  10 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  11 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  12 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  13 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  14 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  15 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  16 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  17 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  18 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  19 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  20 FNAN SNAN  44   0
+     ..........
+     ......
+
+TFNAN=    1584   Average FNAN=  44.00000
+TSNAN=       0   Average SNAN=   0.00000
+<truncation> CpyCell= 2 ct_AN=   1 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   2 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   3 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   4 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   5 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   6 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   7 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   8 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   9 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  10 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  11 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  12 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  13 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  14 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  15 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  16 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  17 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  18 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  19 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  20 FNAN SNAN  44   0
+     ..........
+     ......
+
+TFNAN=    1584   Average FNAN=  44.00000
+TSNAN=       0   Average SNAN=   0.00000
+<truncation> CpyCell= 2 ct_AN=   1 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   2 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   3 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   4 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   5 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   6 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   7 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   8 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   9 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  10 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  11 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  12 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  13 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  14 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  15 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  16 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  17 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  18 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  19 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  20 FNAN SNAN  44   0
+     ..........
+     ......
+
+<Check_System> The system is slab.
+lattice vectors (bohr)
+A  = 19.540088731215,  0.000000000000,  0.000000000000
+B  =  0.000000000000, 19.540088731215,  0.000000000000
+C  =  0.000000000000,  0.000000000000, 37.794519771578
+reciprocal lattice vectors (bohr^-1)
+RA =  0.321553570898,  0.000000000000,  0.000000000000
+RB =  0.000000000000,  0.321553570898,  0.000000000000
+RC =  0.000000000000,  0.000000000000,  0.166245935791
+Grid_Origin -6.404806846150 -6.404806846150 -16.895050207414
+Cell_Volume =  14430.517122391884 (Bohr^3)
+GridVol     =      0.010604436451 (Bohr^3)
+Grid_Origin -6.404806846150 -6.404806846150 -16.895050207414
+Cell_Volume =  14430.517122391884 (Bohr^3)
+GridVol     =      0.010604436451 (Bohr^3)
+<UCell_Box> Info. of cutoff energy and num. of grids
+lattice vectors (bohr)
+A  = 19.540088731215,  0.000000000000,  0.000000000000
+B  =  0.000000000000, 19.540088731215,  0.000000000000
+C  =  0.000000000000,  0.000000000000, 37.794519771578
+reciprocal lattice vectors (bohr^-1)
+RA =  0.321553570898,  0.000000000000,  0.000000000000
+RB =  0.000000000000,  0.321553570898,  0.000000000000
+RC =  0.000000000000,  0.000000000000,  0.166245935791
+Required cutoff energy (Ryd) for 3D-grids = 200.0000
+    Used cutoff energy (Ryd) for 3D-grids = 209.3783, 209.3783, 195.0117
+Num. of grids of a-, b-, and c-axes = 90, 90, 168
+Grid_Origin -6.404806846150 -6.404806846150 -16.895050207414
+Cell_Volume =  14430.517122391884 (Bohr^3)
+GridVol     =      0.010604436451 (Bohr^3)
+Cell vectors (bohr) of the grid cell (gtv)
+  gtv_a =  0.217112097013,  0.000000000000,  0.000000000000
+  gtv_b =  0.000000000000,  0.217112097013,  0.000000000000
+  gtv_c =  0.000000000000,  0.000000000000,  0.224967379593
+  |gtv_a| =  0.217112097013
+  |gtv_b| =  0.217112097013
+  |gtv_c| =  0.224967379593
+Num. of grids overlapping with atom    1 = 85328
+Num. of grids overlapping with atom    2 = 85328
+Num. of grids overlapping with atom    3 = 85328
+Num. of grids overlapping with atom    4 = 85328
+Num. of grids overlapping with atom    5 = 85328
+Num. of grids overlapping with atom    6 = 85328
+Num. of grids overlapping with atom    7 = 85328
+Num. of grids overlapping with atom    8 = 85328
+Num. of grids overlapping with atom    9 = 85328
+Num. of grids overlapping with atom   10 = 85328
+Num. of grids overlapping with atom   11 = 85328
+Num. of grids overlapping with atom   12 = 85328
+Num. of grids overlapping with atom   13 = 85328
+Num. of grids overlapping with atom   14 = 85328
+Num. of grids overlapping with atom   15 = 85328
+Num. of grids overlapping with atom   16 = 85328
+Num. of grids overlapping with atom   17 = 85328
+Num. of grids overlapping with atom   18 = 85328
+Num. of grids overlapping with atom   19 = 85328
+Num. of grids overlapping with atom   20 = 85328
+     ..........
+     ......
+
+
+ Calculate S and H0 ...
+
+*******************************************************
+             SCF calculation at MD = 1                
+*******************************************************
+
+<MD= 1>  Calculation of the overlap matrix
+<MD= 1>  Calculation of the nonlocal matrix
+<MD= 1>  Calculation of the VNA projector matrix
+<Set_Hamiltonian>  Hamiltonian matrix for VNA+dVH+Vxc...
+Save the scfout file (overlap.scfout)
+
+ Finish calculating S & H0
+
+The number of threads in each node for OpenMP parallelization is 1.
+
+
+*******************************************************
+*******************************************************
+ Welcome to OpenMX   Ver. 3.9                           
+ Copyright (C), 2002-2019, T. Ozaki                    
+ OpenMX comes with ABSOLUTELY NO WARRANTY.             
+ This is free software, and you are welcome to         
+ redistribute it under the constitution of the GNU-GPL.
+*******************************************************
+*******************************************************
+
+
+
+<Input_std>  Your input file was normally read.
+<Input_std>  The system includes 1 species and 36 atoms.
+
+*******************************************************
+                     PAO and VPS                       
+*******************************************************
+
+<SetPara_DFT>  PAOs of species C were normally found.
+<SetPara_DFT>  VPSs of species C were normally found.
+               C_PBE19.vps is j-dependent.
+               In case of scf.SpinOrbit.Coupling=off,
+               j-dependent pseudo potentials are averaged by j-degeneracy,
+               which corresponds to a scalar relativistic treatment.
+
+*******************************************************
+     Fourier transform of PAO and projectors of VNL    
+*******************************************************
+
+<FT_PAO>          Fourier transform of pseudo atomic orbitals
+<FT_NLP>          Fourier transform of non-local projectors
+<FT_ProExpn_VNA>  Fourier transform of VNA separable projectors
+<FT_VNA>          Fourier transform of VNA potentials
+<FT_ProductPAO>   Fourier transform of product of PAOs
+
+*******************************************************
+  Allocation of atoms to proccesors at MD_iter=    1     
+*******************************************************
+
+ proc =   0  # of atoms=   2  estimated weight=         2.00000
+ proc =   1  # of atoms=   2  estimated weight=         2.00000
+ proc =   2  # of atoms=   2  estimated weight=         2.00000
+ proc =   3  # of atoms=   3  estimated weight=         3.00000
+ proc =   4  # of atoms=   2  estimated weight=         2.00000
+ proc =   5  # of atoms=   2  estimated weight=         2.00000
+ proc =   6  # of atoms=   2  estimated weight=         2.00000
+ proc =   7  # of atoms=   3  estimated weight=         3.00000
+ proc =   8  # of atoms=   2  estimated weight=         2.00000
+ proc =   9  # of atoms=   2  estimated weight=         2.00000
+ proc =  10  # of atoms=   2  estimated weight=         2.00000
+ proc =  11  # of atoms=   3  estimated weight=         3.00000
+ proc =  12  # of atoms=   2  estimated weight=         2.00000
+ proc =  13  # of atoms=   2  estimated weight=         2.00000
+ proc =  14  # of atoms=   2  estimated weight=         2.00000
+ proc =  15  # of atoms=   3  estimated weight=         3.00000
+
+
+
+
+*******************************************************
+        Analysis of neighbors and setting of grids        
+*******************************************************
+
+TFNAN=    1584   Average FNAN=  44.00000
+TSNAN=       0   Average SNAN=   0.00000
+<truncation> CpyCell= 1 ct_AN=   1 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=   2 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=   3 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=   4 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=   5 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=   6 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=   7 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=   8 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=   9 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  10 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  11 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  12 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  13 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  14 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  15 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  16 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  17 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  18 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  19 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  20 FNAN SNAN  44   0
+     ..........
+     ......
+
+TFNAN=    1584   Average FNAN=  44.00000
+TSNAN=       0   Average SNAN=   0.00000
+<truncation> CpyCell= 2 ct_AN=   1 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   2 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   3 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   4 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   5 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   6 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   7 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   8 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   9 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  10 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  11 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  12 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  13 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  14 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  15 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  16 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  17 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  18 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  19 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  20 FNAN SNAN  44   0
+     ..........
+     ......
+
+TFNAN=    1584   Average FNAN=  44.00000
+TSNAN=       0   Average SNAN=   0.00000
+<truncation> CpyCell= 2 ct_AN=   1 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   2 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   3 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   4 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   5 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   6 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   7 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   8 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   9 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  10 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  11 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  12 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  13 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  14 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  15 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  16 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  17 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  18 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  19 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  20 FNAN SNAN  44   0
+     ..........
+     ......
+
+<Check_System> The system is slab.
+lattice vectors (bohr)
+A  = 19.540088731215,  0.000000000000,  0.000000000000
+B  =  0.000000000000, 19.540088731215,  0.000000000000
+C  =  0.000000000000,  0.000000000000, 37.794519771578
+reciprocal lattice vectors (bohr^-1)
+RA =  0.321553570898,  0.000000000000,  0.000000000000
+RB =  0.000000000000,  0.321553570898,  0.000000000000
+RC =  0.000000000000,  0.000000000000,  0.166245935791
+Grid_Origin -6.404281922265 -6.404806846150 -16.895050207414
+Cell_Volume =  14430.517122391884 (Bohr^3)
+GridVol     =      0.010604436451 (Bohr^3)
+Grid_Origin -6.404281922265 -6.404806846150 -16.895050207414
+Cell_Volume =  14430.517122391884 (Bohr^3)
+GridVol     =      0.010604436451 (Bohr^3)
+<UCell_Box> Info. of cutoff energy and num. of grids
+lattice vectors (bohr)
+A  = 19.540088731215,  0.000000000000,  0.000000000000
+B  =  0.000000000000, 19.540088731215,  0.000000000000
+C  =  0.000000000000,  0.000000000000, 37.794519771578
+reciprocal lattice vectors (bohr^-1)
+RA =  0.321553570898,  0.000000000000,  0.000000000000
+RB =  0.000000000000,  0.321553570898,  0.000000000000
+RC =  0.000000000000,  0.000000000000,  0.166245935791
+Required cutoff energy (Ryd) for 3D-grids = 200.0000
+    Used cutoff energy (Ryd) for 3D-grids = 209.3783, 209.3783, 195.0117
+Num. of grids of a-, b-, and c-axes = 90, 90, 168
+Grid_Origin -6.404281922265 -6.404806846150 -16.895050207414
+Cell_Volume =  14430.517122391884 (Bohr^3)
+GridVol     =      0.010604436451 (Bohr^3)
+Cell vectors (bohr) of the grid cell (gtv)
+  gtv_a =  0.217112097013,  0.000000000000,  0.000000000000
+  gtv_b =  0.000000000000,  0.217112097013,  0.000000000000
+  gtv_c =  0.000000000000,  0.000000000000,  0.224967379593
+  |gtv_a| =  0.217112097013
+  |gtv_b| =  0.217112097013
+  |gtv_c| =  0.224967379593
+Num. of grids overlapping with atom    1 = 85330
+Num. of grids overlapping with atom    2 = 85320
+Num. of grids overlapping with atom    3 = 85328
+Num. of grids overlapping with atom    4 = 85330
+Num. of grids overlapping with atom    5 = 85330
+Num. of grids overlapping with atom    6 = 85320
+Num. of grids overlapping with atom    7 = 85328
+Num. of grids overlapping with atom    8 = 85330
+Num. of grids overlapping with atom    9 = 85330
+Num. of grids overlapping with atom   10 = 85320
+Num. of grids overlapping with atom   11 = 85328
+Num. of grids overlapping with atom   12 = 85330
+Num. of grids overlapping with atom   13 = 85330
+Num. of grids overlapping with atom   14 = 85320
+Num. of grids overlapping with atom   15 = 85328
+Num. of grids overlapping with atom   16 = 85330
+Num. of grids overlapping with atom   17 = 85288
+Num. of grids overlapping with atom   18 = 85320
+Num. of grids overlapping with atom   19 = 85328
+Num. of grids overlapping with atom   20 = 85330
+     ..........
+     ......
+
+
+ Calculate S and H0 ...
+
+*******************************************************
+             SCF calculation at MD = 1                
+*******************************************************
+
+<MD= 1>  Calculation of the overlap matrix
+<MD= 1>  Calculation of the nonlocal matrix
+<MD= 1>  Calculation of the VNA projector matrix
+<Set_Hamiltonian>  Hamiltonian matrix for VNA+dVH+Vxc...
+Save the scfout file (overlap.scfout)
+
+ Finish calculating S & H0
+
+The number of threads in each node for OpenMP parallelization is 1.
+
+
+*******************************************************
+*******************************************************
+ Welcome to OpenMX   Ver. 3.9                           
+ Copyright (C), 2002-2019, T. Ozaki                    
+ OpenMX comes with ABSOLUTELY NO WARRANTY.             
+ This is free software, and you are welcome to         
+ redistribute it under the constitution of the GNU-GPL.
+*******************************************************
+*******************************************************
+
+
+
+<Input_std>  Your input file was normally read.
+<Input_std>  The system includes 1 species and 36 atoms.
+
+*******************************************************
+                     PAO and VPS                       
+*******************************************************
+
+<SetPara_DFT>  PAOs of species C were normally found.
+<SetPara_DFT>  VPSs of species C were normally found.
+               C_PBE19.vps is j-dependent.
+               In case of scf.SpinOrbit.Coupling=off,
+               j-dependent pseudo potentials are averaged by j-degeneracy,
+               which corresponds to a scalar relativistic treatment.
+
+*******************************************************
+     Fourier transform of PAO and projectors of VNL    
+*******************************************************
+
+<FT_PAO>          Fourier transform of pseudo atomic orbitals
+<FT_NLP>          Fourier transform of non-local projectors
+<FT_ProExpn_VNA>  Fourier transform of VNA separable projectors
+<FT_VNA>          Fourier transform of VNA potentials
+<FT_ProductPAO>   Fourier transform of product of PAOs
+
+*******************************************************
+  Allocation of atoms to proccesors at MD_iter=    1     
+*******************************************************
+
+ proc =   0  # of atoms=   2  estimated weight=         2.00000
+ proc =   1  # of atoms=   2  estimated weight=         2.00000
+ proc =   2  # of atoms=   2  estimated weight=         2.00000
+ proc =   3  # of atoms=   3  estimated weight=         3.00000
+ proc =   4  # of atoms=   2  estimated weight=         2.00000
+ proc =   5  # of atoms=   2  estimated weight=         2.00000
+ proc =   6  # of atoms=   2  estimated weight=         2.00000
+ proc =   7  # of atoms=   3  estimated weight=         3.00000
+ proc =   8  # of atoms=   2  estimated weight=         2.00000
+ proc =   9  # of atoms=   2  estimated weight=         2.00000
+ proc =  10  # of atoms=   2  estimated weight=         2.00000
+ proc =  11  # of atoms=   3  estimated weight=         3.00000
+ proc =  12  # of atoms=   2  estimated weight=         2.00000
+ proc =  13  # of atoms=   2  estimated weight=         2.00000
+ proc =  14  # of atoms=   2  estimated weight=         2.00000
+ proc =  15  # of atoms=   3  estimated weight=         3.00000
+
+
+
+
+*******************************************************
+        Analysis of neighbors and setting of grids        
+*******************************************************
+
+TFNAN=    1584   Average FNAN=  44.00000
+TSNAN=       0   Average SNAN=   0.00000
+<truncation> CpyCell= 1 ct_AN=   1 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=   2 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=   3 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=   4 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=   5 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=   6 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=   7 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=   8 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=   9 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  10 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  11 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  12 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  13 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  14 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  15 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  16 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  17 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  18 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  19 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  20 FNAN SNAN  44   0
+     ..........
+     ......
+
+TFNAN=    1584   Average FNAN=  44.00000
+TSNAN=       0   Average SNAN=   0.00000
+<truncation> CpyCell= 2 ct_AN=   1 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   2 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   3 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   4 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   5 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   6 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   7 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   8 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   9 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  10 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  11 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  12 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  13 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  14 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  15 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  16 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  17 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  18 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  19 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  20 FNAN SNAN  44   0
+     ..........
+     ......
+
+TFNAN=    1584   Average FNAN=  44.00000
+TSNAN=       0   Average SNAN=   0.00000
+<truncation> CpyCell= 2 ct_AN=   1 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   2 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   3 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   4 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   5 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   6 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   7 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   8 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   9 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  10 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  11 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  12 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  13 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  14 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  15 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  16 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  17 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  18 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  19 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  20 FNAN SNAN  44   0
+     ..........
+     ......
+
+<Check_System> The system is slab.
+lattice vectors (bohr)
+A  = 19.540088731215,  0.000000000000,  0.000000000000
+B  =  0.000000000000, 19.540088731215,  0.000000000000
+C  =  0.000000000000,  0.000000000000, 37.794519771578
+reciprocal lattice vectors (bohr^-1)
+RA =  0.321553570898,  0.000000000000,  0.000000000000
+RB =  0.000000000000,  0.321553570898,  0.000000000000
+RC =  0.000000000000,  0.000000000000,  0.166245935791
+Grid_Origin -6.404806846150 -6.404281922265 -16.895050207414
+Cell_Volume =  14430.517122391884 (Bohr^3)
+GridVol     =      0.010604436451 (Bohr^3)
+Grid_Origin -6.404806846150 -6.404281922265 -16.895050207414
+Cell_Volume =  14430.517122391884 (Bohr^3)
+GridVol     =      0.010604436451 (Bohr^3)
+<UCell_Box> Info. of cutoff energy and num. of grids
+lattice vectors (bohr)
+A  = 19.540088731215,  0.000000000000,  0.000000000000
+B  =  0.000000000000, 19.540088731215,  0.000000000000
+C  =  0.000000000000,  0.000000000000, 37.794519771578
+reciprocal lattice vectors (bohr^-1)
+RA =  0.321553570898,  0.000000000000,  0.000000000000
+RB =  0.000000000000,  0.321553570898,  0.000000000000
+RC =  0.000000000000,  0.000000000000,  0.166245935791
+Required cutoff energy (Ryd) for 3D-grids = 200.0000
+    Used cutoff energy (Ryd) for 3D-grids = 209.3783, 209.3783, 195.0117
+Num. of grids of a-, b-, and c-axes = 90, 90, 168
+Grid_Origin -6.404806846150 -6.404281922265 -16.895050207414
+Cell_Volume =  14430.517122391884 (Bohr^3)
+GridVol     =      0.010604436451 (Bohr^3)
+Cell vectors (bohr) of the grid cell (gtv)
+  gtv_a =  0.217112097013,  0.000000000000,  0.000000000000
+  gtv_b =  0.000000000000,  0.217112097013,  0.000000000000
+  gtv_c =  0.000000000000,  0.000000000000,  0.224967379593
+  |gtv_a| =  0.217112097013
+  |gtv_b| =  0.217112097013
+  |gtv_c| =  0.224967379593
+Num. of grids overlapping with atom    1 = 85320
+Num. of grids overlapping with atom    2 = 85330
+Num. of grids overlapping with atom    3 = 85330
+Num. of grids overlapping with atom    4 = 85328
+Num. of grids overlapping with atom    5 = 85320
+Num. of grids overlapping with atom    6 = 85330
+Num. of grids overlapping with atom    7 = 85330
+Num. of grids overlapping with atom    8 = 85328
+Num. of grids overlapping with atom    9 = 85320
+Num. of grids overlapping with atom   10 = 85330
+Num. of grids overlapping with atom   11 = 85330
+Num. of grids overlapping with atom   12 = 85328
+Num. of grids overlapping with atom   13 = 85320
+Num. of grids overlapping with atom   14 = 85330
+Num. of grids overlapping with atom   15 = 85330
+Num. of grids overlapping with atom   16 = 85328
+Num. of grids overlapping with atom   17 = 85268
+Num. of grids overlapping with atom   18 = 85330
+Num. of grids overlapping with atom   19 = 85330
+Num. of grids overlapping with atom   20 = 85328
+     ..........
+     ......
+
+
+ Calculate S and H0 ...
+
+*******************************************************
+             SCF calculation at MD = 1                
+*******************************************************
+
+<MD= 1>  Calculation of the overlap matrix
+<MD= 1>  Calculation of the nonlocal matrix
+<MD= 1>  Calculation of the VNA projector matrix
+<Set_Hamiltonian>  Hamiltonian matrix for VNA+dVH+Vxc...
+Save the scfout file (overlap.scfout)
+
+ Finish calculating S & H0
+
+The number of threads in each node for OpenMP parallelization is 1.
+
+
+*******************************************************
+*******************************************************
+ Welcome to OpenMX   Ver. 3.9                           
+ Copyright (C), 2002-2019, T. Ozaki                    
+ OpenMX comes with ABSOLUTELY NO WARRANTY.             
+ This is free software, and you are welcome to         
+ redistribute it under the constitution of the GNU-GPL.
+*******************************************************
+*******************************************************
+
+
+
+<Input_std>  Your input file was normally read.
+<Input_std>  The system includes 1 species and 36 atoms.
+
+*******************************************************
+                     PAO and VPS                       
+*******************************************************
+
+<SetPara_DFT>  PAOs of species C were normally found.
+<SetPara_DFT>  VPSs of species C were normally found.
+               C_PBE19.vps is j-dependent.
+               In case of scf.SpinOrbit.Coupling=off,
+               j-dependent pseudo potentials are averaged by j-degeneracy,
+               which corresponds to a scalar relativistic treatment.
+
+*******************************************************
+     Fourier transform of PAO and projectors of VNL    
+*******************************************************
+
+<FT_PAO>          Fourier transform of pseudo atomic orbitals
+<FT_NLP>          Fourier transform of non-local projectors
+<FT_ProExpn_VNA>  Fourier transform of VNA separable projectors
+<FT_VNA>          Fourier transform of VNA potentials
+<FT_ProductPAO>   Fourier transform of product of PAOs
+
+*******************************************************
+  Allocation of atoms to proccesors at MD_iter=    1     
+*******************************************************
+
+ proc =   0  # of atoms=   2  estimated weight=         2.00000
+ proc =   1  # of atoms=   2  estimated weight=         2.00000
+ proc =   2  # of atoms=   2  estimated weight=         2.00000
+ proc =   3  # of atoms=   3  estimated weight=         3.00000
+ proc =   4  # of atoms=   2  estimated weight=         2.00000
+ proc =   5  # of atoms=   2  estimated weight=         2.00000
+ proc =   6  # of atoms=   2  estimated weight=         2.00000
+ proc =   7  # of atoms=   3  estimated weight=         3.00000
+ proc =   8  # of atoms=   2  estimated weight=         2.00000
+ proc =   9  # of atoms=   2  estimated weight=         2.00000
+ proc =  10  # of atoms=   2  estimated weight=         2.00000
+ proc =  11  # of atoms=   3  estimated weight=         3.00000
+ proc =  12  # of atoms=   2  estimated weight=         2.00000
+ proc =  13  # of atoms=   2  estimated weight=         2.00000
+ proc =  14  # of atoms=   2  estimated weight=         2.00000
+ proc =  15  # of atoms=   3  estimated weight=         3.00000
+
+
+
+
+*******************************************************
+        Analysis of neighbors and setting of grids        
+*******************************************************
+
+TFNAN=    1584   Average FNAN=  44.00000
+TSNAN=       0   Average SNAN=   0.00000
+<truncation> CpyCell= 1 ct_AN=   1 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=   2 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=   3 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=   4 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=   5 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=   6 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=   7 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=   8 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=   9 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  10 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  11 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  12 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  13 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  14 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  15 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  16 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  17 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  18 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  19 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  20 FNAN SNAN  44   0
+     ..........
+     ......
+
+TFNAN=    1584   Average FNAN=  44.00000
+TSNAN=       0   Average SNAN=   0.00000
+<truncation> CpyCell= 2 ct_AN=   1 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   2 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   3 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   4 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   5 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   6 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   7 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   8 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   9 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  10 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  11 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  12 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  13 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  14 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  15 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  16 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  17 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  18 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  19 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  20 FNAN SNAN  44   0
+     ..........
+     ......
+
+TFNAN=    1584   Average FNAN=  44.00000
+TSNAN=       0   Average SNAN=   0.00000
+<truncation> CpyCell= 2 ct_AN=   1 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   2 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   3 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   4 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   5 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   6 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   7 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   8 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   9 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  10 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  11 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  12 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  13 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  14 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  15 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  16 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  17 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  18 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  19 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  20 FNAN SNAN  44   0
+     ..........
+     ......
+
+<Check_System> The system is slab.
+lattice vectors (bohr)
+A  = 19.540088731215,  0.000000000000,  0.000000000000
+B  =  0.000000000000, 19.540088731215,  0.000000000000
+C  =  0.000000000000,  0.000000000000, 37.794519771578
+reciprocal lattice vectors (bohr^-1)
+RA =  0.321553570898,  0.000000000000,  0.000000000000
+RB =  0.000000000000,  0.321553570898,  0.000000000000
+RC =  0.000000000000,  0.000000000000,  0.166245935791
+Grid_Origin -6.404806846150 -6.404806846150 -16.894525283528
+Cell_Volume =  14430.517122391884 (Bohr^3)
+GridVol     =      0.010604436451 (Bohr^3)
+Grid_Origin -6.404806846150 -6.404806846150 -16.894525283528
+Cell_Volume =  14430.517122391884 (Bohr^3)
+GridVol     =      0.010604436451 (Bohr^3)
+<UCell_Box> Info. of cutoff energy and num. of grids
+lattice vectors (bohr)
+A  = 19.540088731215,  0.000000000000,  0.000000000000
+B  =  0.000000000000, 19.540088731215,  0.000000000000
+C  =  0.000000000000,  0.000000000000, 37.794519771578
+reciprocal lattice vectors (bohr^-1)
+RA =  0.321553570898,  0.000000000000,  0.000000000000
+RB =  0.000000000000,  0.321553570898,  0.000000000000
+RC =  0.000000000000,  0.000000000000,  0.166245935791
+Required cutoff energy (Ryd) for 3D-grids = 200.0000
+    Used cutoff energy (Ryd) for 3D-grids = 209.3783, 209.3783, 195.0117
+Num. of grids of a-, b-, and c-axes = 90, 90, 168
+Grid_Origin -6.404806846150 -6.404806846150 -16.894525283528
+Cell_Volume =  14430.517122391884 (Bohr^3)
+GridVol     =      0.010604436451 (Bohr^3)
+Cell vectors (bohr) of the grid cell (gtv)
+  gtv_a =  0.217112097013,  0.000000000000,  0.000000000000
+  gtv_b =  0.000000000000,  0.217112097013,  0.000000000000
+  gtv_c =  0.000000000000,  0.000000000000,  0.224967379593
+  |gtv_a| =  0.217112097013
+  |gtv_b| =  0.217112097013
+  |gtv_c| =  0.224967379593
+Num. of grids overlapping with atom    1 = 85324
+Num. of grids overlapping with atom    2 = 85324
+Num. of grids overlapping with atom    3 = 85324
+Num. of grids overlapping with atom    4 = 85324
+Num. of grids overlapping with atom    5 = 85324
+Num. of grids overlapping with atom    6 = 85324
+Num. of grids overlapping with atom    7 = 85324
+Num. of grids overlapping with atom    8 = 85324
+Num. of grids overlapping with atom    9 = 85324
+Num. of grids overlapping with atom   10 = 85324
+Num. of grids overlapping with atom   11 = 85324
+Num. of grids overlapping with atom   12 = 85324
+Num. of grids overlapping with atom   13 = 85324
+Num. of grids overlapping with atom   14 = 85324
+Num. of grids overlapping with atom   15 = 85324
+Num. of grids overlapping with atom   16 = 85324
+Num. of grids overlapping with atom   17 = 85278
+Num. of grids overlapping with atom   18 = 85324
+Num. of grids overlapping with atom   19 = 85324
+Num. of grids overlapping with atom   20 = 85324
+     ..........
+     ......
+
+
+ Calculate S and H0 ...
+
+*******************************************************
+             SCF calculation at MD = 1                
+*******************************************************
+
+<MD= 1>  Calculation of the overlap matrix
+<MD= 1>  Calculation of the nonlocal matrix
+<MD= 1>  Calculation of the VNA projector matrix
+<Set_Hamiltonian>  Hamiltonian matrix for VNA+dVH+Vxc...
+Save the scfout file (overlap.scfout)
+
+ Finish calculating S & H0
+
+The number of threads in each node for OpenMP parallelization is 1.
+
+
+*******************************************************
+*******************************************************
+ Welcome to OpenMX   Ver. 3.9                           
+ Copyright (C), 2002-2019, T. Ozaki                    
+ OpenMX comes with ABSOLUTELY NO WARRANTY.             
+ This is free software, and you are welcome to         
+ redistribute it under the constitution of the GNU-GPL.
+*******************************************************
+*******************************************************
+
+
+
+<Input_std>  Your input file was normally read.
+<Input_std>  The system includes 1 species and 36 atoms.
+
+*******************************************************
+                     PAO and VPS                       
+*******************************************************
+
+<SetPara_DFT>  PAOs of species C were normally found.
+<SetPara_DFT>  VPSs of species C were normally found.
+               C_PBE19.vps is j-dependent.
+               In case of scf.SpinOrbit.Coupling=off,
+               j-dependent pseudo potentials are averaged by j-degeneracy,
+               which corresponds to a scalar relativistic treatment.
+
+*******************************************************
+     Fourier transform of PAO and projectors of VNL    
+*******************************************************
+
+<FT_PAO>          Fourier transform of pseudo atomic orbitals
+<FT_NLP>          Fourier transform of non-local projectors
+<FT_ProExpn_VNA>  Fourier transform of VNA separable projectors
+<FT_VNA>          Fourier transform of VNA potentials
+<FT_ProductPAO>   Fourier transform of product of PAOs
+
+*******************************************************
+  Allocation of atoms to proccesors at MD_iter=    1     
+*******************************************************
+
+ proc =   0  # of atoms=   2  estimated weight=         2.00000
+ proc =   1  # of atoms=   2  estimated weight=         2.00000
+ proc =   2  # of atoms=   2  estimated weight=         2.00000
+ proc =   3  # of atoms=   3  estimated weight=         3.00000
+ proc =   4  # of atoms=   2  estimated weight=         2.00000
+ proc =   5  # of atoms=   2  estimated weight=         2.00000
+ proc =   6  # of atoms=   2  estimated weight=         2.00000
+ proc =   7  # of atoms=   3  estimated weight=         3.00000
+ proc =   8  # of atoms=   2  estimated weight=         2.00000
+ proc =   9  # of atoms=   2  estimated weight=         2.00000
+ proc =  10  # of atoms=   2  estimated weight=         2.00000
+ proc =  11  # of atoms=   3  estimated weight=         3.00000
+ proc =  12  # of atoms=   2  estimated weight=         2.00000
+ proc =  13  # of atoms=   2  estimated weight=         2.00000
+ proc =  14  # of atoms=   2  estimated weight=         2.00000
+ proc =  15  # of atoms=   3  estimated weight=         3.00000
+
+
+
+
+*******************************************************
+        Analysis of neighbors and setting of grids        
+*******************************************************
+
+TFNAN=    1584   Average FNAN=  44.00000
+TSNAN=       0   Average SNAN=   0.00000
+<truncation> CpyCell= 1 ct_AN=   1 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=   2 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=   3 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=   4 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=   5 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=   6 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=   7 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=   8 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=   9 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  10 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  11 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  12 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  13 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  14 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  15 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  16 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  17 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  18 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  19 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  20 FNAN SNAN  44   0
+     ..........
+     ......
+
+TFNAN=    1584   Average FNAN=  44.00000
+TSNAN=       0   Average SNAN=   0.00000
+<truncation> CpyCell= 2 ct_AN=   1 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   2 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   3 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   4 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   5 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   6 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   7 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   8 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   9 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  10 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  11 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  12 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  13 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  14 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  15 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  16 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  17 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  18 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  19 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  20 FNAN SNAN  44   0
+     ..........
+     ......
+
+TFNAN=    1584   Average FNAN=  44.00000
+TSNAN=       0   Average SNAN=   0.00000
+<truncation> CpyCell= 2 ct_AN=   1 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   2 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   3 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   4 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   5 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   6 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   7 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   8 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   9 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  10 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  11 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  12 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  13 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  14 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  15 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  16 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  17 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  18 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  19 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  20 FNAN SNAN  44   0
+     ..........
+     ......
+
+<Check_System> The system is slab.
+lattice vectors (bohr)
+A  = 19.540088731215,  0.000000000000,  0.000000000000
+B  =  0.000000000000, 19.540088731215,  0.000000000000
+C  =  0.000000000000,  0.000000000000, 37.794519771578
+reciprocal lattice vectors (bohr^-1)
+RA =  0.321553570898,  0.000000000000,  0.000000000000
+RB =  0.000000000000,  0.321553570898,  0.000000000000
+RC =  0.000000000000,  0.000000000000,  0.166245935791
+Grid_Origin -6.404281922265 -6.404806846150 -16.895050207414
+Cell_Volume =  14430.517122391884 (Bohr^3)
+GridVol     =      0.010604436451 (Bohr^3)
+Grid_Origin -6.404281922265 -6.404806846150 -16.895050207414
+Cell_Volume =  14430.517122391884 (Bohr^3)
+GridVol     =      0.010604436451 (Bohr^3)
+<UCell_Box> Info. of cutoff energy and num. of grids
+lattice vectors (bohr)
+A  = 19.540088731215,  0.000000000000,  0.000000000000
+B  =  0.000000000000, 19.540088731215,  0.000000000000
+C  =  0.000000000000,  0.000000000000, 37.794519771578
+reciprocal lattice vectors (bohr^-1)
+RA =  0.321553570898,  0.000000000000,  0.000000000000
+RB =  0.000000000000,  0.321553570898,  0.000000000000
+RC =  0.000000000000,  0.000000000000,  0.166245935791
+Required cutoff energy (Ryd) for 3D-grids = 200.0000
+    Used cutoff energy (Ryd) for 3D-grids = 209.3783, 209.3783, 195.0117
+Num. of grids of a-, b-, and c-axes = 90, 90, 168
+Grid_Origin -6.404281922265 -6.404806846150 -16.895050207414
+Cell_Volume =  14430.517122391884 (Bohr^3)
+GridVol     =      0.010604436451 (Bohr^3)
+Cell vectors (bohr) of the grid cell (gtv)
+  gtv_a =  0.217112097013,  0.000000000000,  0.000000000000
+  gtv_b =  0.000000000000,  0.217112097013,  0.000000000000
+  gtv_c =  0.000000000000,  0.000000000000,  0.224967379593
+  |gtv_a| =  0.217112097013
+  |gtv_b| =  0.217112097013
+  |gtv_c| =  0.224967379593
+Num. of grids overlapping with atom    1 = 85330
+Num. of grids overlapping with atom    2 = 85320
+Num. of grids overlapping with atom    3 = 85328
+Num. of grids overlapping with atom    4 = 85330
+Num. of grids overlapping with atom    5 = 85330
+Num. of grids overlapping with atom    6 = 85320
+Num. of grids overlapping with atom    7 = 85328
+Num. of grids overlapping with atom    8 = 85330
+Num. of grids overlapping with atom    9 = 85330
+Num. of grids overlapping with atom   10 = 85320
+Num. of grids overlapping with atom   11 = 85328
+Num. of grids overlapping with atom   12 = 85330
+Num. of grids overlapping with atom   13 = 85330
+Num. of grids overlapping with atom   14 = 85320
+Num. of grids overlapping with atom   15 = 85328
+Num. of grids overlapping with atom   16 = 85330
+Num. of grids overlapping with atom   17 = 85330
+Num. of grids overlapping with atom   18 = 85268
+Num. of grids overlapping with atom   19 = 85328
+Num. of grids overlapping with atom   20 = 85330
+     ..........
+     ......
+
+
+ Calculate S and H0 ...
+
+*******************************************************
+             SCF calculation at MD = 1                
+*******************************************************
+
+<MD= 1>  Calculation of the overlap matrix
+<MD= 1>  Calculation of the nonlocal matrix
+<MD= 1>  Calculation of the VNA projector matrix
+<Set_Hamiltonian>  Hamiltonian matrix for VNA+dVH+Vxc...
+Save the scfout file (overlap.scfout)
+
+ Finish calculating S & H0
+
+The number of threads in each node for OpenMP parallelization is 1.
+
+
+*******************************************************
+*******************************************************
+ Welcome to OpenMX   Ver. 3.9                           
+ Copyright (C), 2002-2019, T. Ozaki                    
+ OpenMX comes with ABSOLUTELY NO WARRANTY.             
+ This is free software, and you are welcome to         
+ redistribute it under the constitution of the GNU-GPL.
+*******************************************************
+*******************************************************
+
+
+
+<Input_std>  Your input file was normally read.
+<Input_std>  The system includes 1 species and 36 atoms.
+
+*******************************************************
+                     PAO and VPS                       
+*******************************************************
+
+<SetPara_DFT>  PAOs of species C were normally found.
+<SetPara_DFT>  VPSs of species C were normally found.
+               C_PBE19.vps is j-dependent.
+               In case of scf.SpinOrbit.Coupling=off,
+               j-dependent pseudo potentials are averaged by j-degeneracy,
+               which corresponds to a scalar relativistic treatment.
+
+*******************************************************
+     Fourier transform of PAO and projectors of VNL    
+*******************************************************
+
+<FT_PAO>          Fourier transform of pseudo atomic orbitals
+<FT_NLP>          Fourier transform of non-local projectors
+<FT_ProExpn_VNA>  Fourier transform of VNA separable projectors
+<FT_VNA>          Fourier transform of VNA potentials
+<FT_ProductPAO>   Fourier transform of product of PAOs
+
+*******************************************************
+  Allocation of atoms to proccesors at MD_iter=    1     
+*******************************************************
+
+ proc =   0  # of atoms=   2  estimated weight=         2.00000
+ proc =   1  # of atoms=   2  estimated weight=         2.00000
+ proc =   2  # of atoms=   2  estimated weight=         2.00000
+ proc =   3  # of atoms=   3  estimated weight=         3.00000
+ proc =   4  # of atoms=   2  estimated weight=         2.00000
+ proc =   5  # of atoms=   2  estimated weight=         2.00000
+ proc =   6  # of atoms=   2  estimated weight=         2.00000
+ proc =   7  # of atoms=   3  estimated weight=         3.00000
+ proc =   8  # of atoms=   2  estimated weight=         2.00000
+ proc =   9  # of atoms=   2  estimated weight=         2.00000
+ proc =  10  # of atoms=   2  estimated weight=         2.00000
+ proc =  11  # of atoms=   3  estimated weight=         3.00000
+ proc =  12  # of atoms=   2  estimated weight=         2.00000
+ proc =  13  # of atoms=   2  estimated weight=         2.00000
+ proc =  14  # of atoms=   2  estimated weight=         2.00000
+ proc =  15  # of atoms=   3  estimated weight=         3.00000
+
+
+
+
+*******************************************************
+        Analysis of neighbors and setting of grids        
+*******************************************************
+
+TFNAN=    1584   Average FNAN=  44.00000
+TSNAN=       0   Average SNAN=   0.00000
+<truncation> CpyCell= 1 ct_AN=   1 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=   2 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=   3 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=   4 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=   5 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=   6 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=   7 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=   8 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=   9 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  10 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  11 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  12 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  13 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  14 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  15 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  16 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  17 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  18 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  19 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  20 FNAN SNAN  44   0
+     ..........
+     ......
+
+TFNAN=    1584   Average FNAN=  44.00000
+TSNAN=       0   Average SNAN=   0.00000
+<truncation> CpyCell= 2 ct_AN=   1 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   2 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   3 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   4 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   5 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   6 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   7 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   8 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   9 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  10 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  11 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  12 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  13 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  14 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  15 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  16 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  17 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  18 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  19 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  20 FNAN SNAN  44   0
+     ..........
+     ......
+
+TFNAN=    1584   Average FNAN=  44.00000
+TSNAN=       0   Average SNAN=   0.00000
+<truncation> CpyCell= 2 ct_AN=   1 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   2 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   3 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   4 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   5 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   6 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   7 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   8 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   9 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  10 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  11 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  12 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  13 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  14 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  15 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  16 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  17 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  18 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  19 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  20 FNAN SNAN  44   0
+     ..........
+     ......
+
+<Check_System> The system is slab.
+lattice vectors (bohr)
+A  = 19.540088731215,  0.000000000000,  0.000000000000
+B  =  0.000000000000, 19.540088731215,  0.000000000000
+C  =  0.000000000000,  0.000000000000, 37.794519771578
+reciprocal lattice vectors (bohr^-1)
+RA =  0.321553570898,  0.000000000000,  0.000000000000
+RB =  0.000000000000,  0.321553570898,  0.000000000000
+RC =  0.000000000000,  0.000000000000,  0.166245935791
+Grid_Origin -6.404806846150 -6.404281922265 -16.895050207414
+Cell_Volume =  14430.517122391884 (Bohr^3)
+GridVol     =      0.010604436451 (Bohr^3)
+Grid_Origin -6.404806846150 -6.404281922265 -16.895050207414
+Cell_Volume =  14430.517122391884 (Bohr^3)
+GridVol     =      0.010604436451 (Bohr^3)
+<UCell_Box> Info. of cutoff energy and num. of grids
+lattice vectors (bohr)
+A  = 19.540088731215,  0.000000000000,  0.000000000000
+B  =  0.000000000000, 19.540088731215,  0.000000000000
+C  =  0.000000000000,  0.000000000000, 37.794519771578
+reciprocal lattice vectors (bohr^-1)
+RA =  0.321553570898,  0.000000000000,  0.000000000000
+RB =  0.000000000000,  0.321553570898,  0.000000000000
+RC =  0.000000000000,  0.000000000000,  0.166245935791
+Required cutoff energy (Ryd) for 3D-grids = 200.0000
+    Used cutoff energy (Ryd) for 3D-grids = 209.3783, 209.3783, 195.0117
+Num. of grids of a-, b-, and c-axes = 90, 90, 168
+Grid_Origin -6.404806846150 -6.404281922265 -16.895050207414
+Cell_Volume =  14430.517122391884 (Bohr^3)
+GridVol     =      0.010604436451 (Bohr^3)
+Cell vectors (bohr) of the grid cell (gtv)
+  gtv_a =  0.217112097013,  0.000000000000,  0.000000000000
+  gtv_b =  0.000000000000,  0.217112097013,  0.000000000000
+  gtv_c =  0.000000000000,  0.000000000000,  0.224967379593
+  |gtv_a| =  0.217112097013
+  |gtv_b| =  0.217112097013
+  |gtv_c| =  0.224967379593
+Num. of grids overlapping with atom    1 = 85320
+Num. of grids overlapping with atom    2 = 85330
+Num. of grids overlapping with atom    3 = 85330
+Num. of grids overlapping with atom    4 = 85328
+Num. of grids overlapping with atom    5 = 85320
+Num. of grids overlapping with atom    6 = 85330
+Num. of grids overlapping with atom    7 = 85330
+Num. of grids overlapping with atom    8 = 85328
+Num. of grids overlapping with atom    9 = 85320
+Num. of grids overlapping with atom   10 = 85330
+Num. of grids overlapping with atom   11 = 85330
+Num. of grids overlapping with atom   12 = 85328
+Num. of grids overlapping with atom   13 = 85320
+Num. of grids overlapping with atom   14 = 85330
+Num. of grids overlapping with atom   15 = 85330
+Num. of grids overlapping with atom   16 = 85328
+Num. of grids overlapping with atom   17 = 85320
+Num. of grids overlapping with atom   18 = 85288
+Num. of grids overlapping with atom   19 = 85330
+Num. of grids overlapping with atom   20 = 85328
+     ..........
+     ......
+
+
+ Calculate S and H0 ...
+
+*******************************************************
+             SCF calculation at MD = 1                
+*******************************************************
+
+<MD= 1>  Calculation of the overlap matrix
+<MD= 1>  Calculation of the nonlocal matrix
+<MD= 1>  Calculation of the VNA projector matrix
+<Set_Hamiltonian>  Hamiltonian matrix for VNA+dVH+Vxc...
+Save the scfout file (overlap.scfout)
+
+ Finish calculating S & H0
+
+The number of threads in each node for OpenMP parallelization is 1.
+
+
+*******************************************************
+*******************************************************
+ Welcome to OpenMX   Ver. 3.9                           
+ Copyright (C), 2002-2019, T. Ozaki                    
+ OpenMX comes with ABSOLUTELY NO WARRANTY.             
+ This is free software, and you are welcome to         
+ redistribute it under the constitution of the GNU-GPL.
+*******************************************************
+*******************************************************
+
+
+
+<Input_std>  Your input file was normally read.
+<Input_std>  The system includes 1 species and 36 atoms.
+
+*******************************************************
+                     PAO and VPS                       
+*******************************************************
+
+<SetPara_DFT>  PAOs of species C were normally found.
+<SetPara_DFT>  VPSs of species C were normally found.
+               C_PBE19.vps is j-dependent.
+               In case of scf.SpinOrbit.Coupling=off,
+               j-dependent pseudo potentials are averaged by j-degeneracy,
+               which corresponds to a scalar relativistic treatment.
+
+*******************************************************
+     Fourier transform of PAO and projectors of VNL    
+*******************************************************
+
+<FT_PAO>          Fourier transform of pseudo atomic orbitals
+<FT_NLP>          Fourier transform of non-local projectors
+<FT_ProExpn_VNA>  Fourier transform of VNA separable projectors
+<FT_VNA>          Fourier transform of VNA potentials
+<FT_ProductPAO>   Fourier transform of product of PAOs
+
+*******************************************************
+  Allocation of atoms to proccesors at MD_iter=    1     
+*******************************************************
+
+ proc =   0  # of atoms=   2  estimated weight=         2.00000
+ proc =   1  # of atoms=   2  estimated weight=         2.00000
+ proc =   2  # of atoms=   2  estimated weight=         2.00000
+ proc =   3  # of atoms=   3  estimated weight=         3.00000
+ proc =   4  # of atoms=   2  estimated weight=         2.00000
+ proc =   5  # of atoms=   2  estimated weight=         2.00000
+ proc =   6  # of atoms=   2  estimated weight=         2.00000
+ proc =   7  # of atoms=   3  estimated weight=         3.00000
+ proc =   8  # of atoms=   2  estimated weight=         2.00000
+ proc =   9  # of atoms=   2  estimated weight=         2.00000
+ proc =  10  # of atoms=   2  estimated weight=         2.00000
+ proc =  11  # of atoms=   3  estimated weight=         3.00000
+ proc =  12  # of atoms=   2  estimated weight=         2.00000
+ proc =  13  # of atoms=   2  estimated weight=         2.00000
+ proc =  14  # of atoms=   2  estimated weight=         2.00000
+ proc =  15  # of atoms=   3  estimated weight=         3.00000
+
+
+
+
+*******************************************************
+        Analysis of neighbors and setting of grids        
+*******************************************************
+
+TFNAN=    1584   Average FNAN=  44.00000
+TSNAN=       0   Average SNAN=   0.00000
+<truncation> CpyCell= 1 ct_AN=   1 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=   2 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=   3 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=   4 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=   5 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=   6 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=   7 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=   8 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=   9 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  10 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  11 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  12 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  13 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  14 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  15 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  16 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  17 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  18 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  19 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  20 FNAN SNAN  44   0
+     ..........
+     ......
+
+TFNAN=    1584   Average FNAN=  44.00000
+TSNAN=       0   Average SNAN=   0.00000
+<truncation> CpyCell= 2 ct_AN=   1 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   2 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   3 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   4 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   5 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   6 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   7 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   8 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   9 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  10 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  11 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  12 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  13 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  14 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  15 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  16 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  17 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  18 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  19 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  20 FNAN SNAN  44   0
+     ..........
+     ......
+
+TFNAN=    1584   Average FNAN=  44.00000
+TSNAN=       0   Average SNAN=   0.00000
+<truncation> CpyCell= 2 ct_AN=   1 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   2 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   3 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   4 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   5 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   6 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   7 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   8 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   9 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  10 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  11 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  12 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  13 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  14 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  15 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  16 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  17 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  18 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  19 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  20 FNAN SNAN  44   0
+     ..........
+     ......
+
+<Check_System> The system is slab.
+lattice vectors (bohr)
+A  = 19.540088731215,  0.000000000000,  0.000000000000
+B  =  0.000000000000, 19.540088731215,  0.000000000000
+C  =  0.000000000000,  0.000000000000, 37.794519771578
+reciprocal lattice vectors (bohr^-1)
+RA =  0.321553570898,  0.000000000000,  0.000000000000
+RB =  0.000000000000,  0.321553570898,  0.000000000000
+RC =  0.000000000000,  0.000000000000,  0.166245935791
+Grid_Origin -6.404806846150 -6.404806846150 -16.894525283528
+Cell_Volume =  14430.517122391884 (Bohr^3)
+GridVol     =      0.010604436451 (Bohr^3)
+Grid_Origin -6.404806846150 -6.404806846150 -16.894525283528
+Cell_Volume =  14430.517122391884 (Bohr^3)
+GridVol     =      0.010604436451 (Bohr^3)
+<UCell_Box> Info. of cutoff energy and num. of grids
+lattice vectors (bohr)
+A  = 19.540088731215,  0.000000000000,  0.000000000000
+B  =  0.000000000000, 19.540088731215,  0.000000000000
+C  =  0.000000000000,  0.000000000000, 37.794519771578
+reciprocal lattice vectors (bohr^-1)
+RA =  0.321553570898,  0.000000000000,  0.000000000000
+RB =  0.000000000000,  0.321553570898,  0.000000000000
+RC =  0.000000000000,  0.000000000000,  0.166245935791
+Required cutoff energy (Ryd) for 3D-grids = 200.0000
+    Used cutoff energy (Ryd) for 3D-grids = 209.3783, 209.3783, 195.0117
+Num. of grids of a-, b-, and c-axes = 90, 90, 168
+Grid_Origin -6.404806846150 -6.404806846150 -16.894525283528
+Cell_Volume =  14430.517122391884 (Bohr^3)
+GridVol     =      0.010604436451 (Bohr^3)
+Cell vectors (bohr) of the grid cell (gtv)
+  gtv_a =  0.217112097013,  0.000000000000,  0.000000000000
+  gtv_b =  0.000000000000,  0.217112097013,  0.000000000000
+  gtv_c =  0.000000000000,  0.000000000000,  0.224967379593
+  |gtv_a| =  0.217112097013
+  |gtv_b| =  0.217112097013
+  |gtv_c| =  0.224967379593
+Num. of grids overlapping with atom    1 = 85324
+Num. of grids overlapping with atom    2 = 85324
+Num. of grids overlapping with atom    3 = 85324
+Num. of grids overlapping with atom    4 = 85324
+Num. of grids overlapping with atom    5 = 85324
+Num. of grids overlapping with atom    6 = 85324
+Num. of grids overlapping with atom    7 = 85324
+Num. of grids overlapping with atom    8 = 85324
+Num. of grids overlapping with atom    9 = 85324
+Num. of grids overlapping with atom   10 = 85324
+Num. of grids overlapping with atom   11 = 85324
+Num. of grids overlapping with atom   12 = 85324
+Num. of grids overlapping with atom   13 = 85324
+Num. of grids overlapping with atom   14 = 85324
+Num. of grids overlapping with atom   15 = 85324
+Num. of grids overlapping with atom   16 = 85324
+Num. of grids overlapping with atom   17 = 85324
+Num. of grids overlapping with atom   18 = 85278
+Num. of grids overlapping with atom   19 = 85324
+Num. of grids overlapping with atom   20 = 85324
+     ..........
+     ......
+
+
+ Calculate S and H0 ...
+
+*******************************************************
+             SCF calculation at MD = 1                
+*******************************************************
+
+<MD= 1>  Calculation of the overlap matrix
+<MD= 1>  Calculation of the nonlocal matrix
+<MD= 1>  Calculation of the VNA projector matrix
+<Set_Hamiltonian>  Hamiltonian matrix for VNA+dVH+Vxc...
+Save the scfout file (overlap.scfout)
+
+ Finish calculating S & H0
+
+The number of threads in each node for OpenMP parallelization is 1.
+
+
+*******************************************************
+*******************************************************
+ Welcome to OpenMX   Ver. 3.9                           
+ Copyright (C), 2002-2019, T. Ozaki                    
+ OpenMX comes with ABSOLUTELY NO WARRANTY.             
+ This is free software, and you are welcome to         
+ redistribute it under the constitution of the GNU-GPL.
+*******************************************************
+*******************************************************
+
+
+
+<Input_std>  Your input file was normally read.
+<Input_std>  The system includes 1 species and 36 atoms.
+
+*******************************************************
+                     PAO and VPS                       
+*******************************************************
+
+<SetPara_DFT>  PAOs of species C were normally found.
+<SetPara_DFT>  VPSs of species C were normally found.
+               C_PBE19.vps is j-dependent.
+               In case of scf.SpinOrbit.Coupling=off,
+               j-dependent pseudo potentials are averaged by j-degeneracy,
+               which corresponds to a scalar relativistic treatment.
+
+*******************************************************
+     Fourier transform of PAO and projectors of VNL    
+*******************************************************
+
+<FT_PAO>          Fourier transform of pseudo atomic orbitals
+<FT_NLP>          Fourier transform of non-local projectors
+<FT_ProExpn_VNA>  Fourier transform of VNA separable projectors
+<FT_VNA>          Fourier transform of VNA potentials
+<FT_ProductPAO>   Fourier transform of product of PAOs
+
+*******************************************************
+  Allocation of atoms to proccesors at MD_iter=    1     
+*******************************************************
+
+ proc =   0  # of atoms=   2  estimated weight=         2.00000
+ proc =   1  # of atoms=   2  estimated weight=         2.00000
+ proc =   2  # of atoms=   2  estimated weight=         2.00000
+ proc =   3  # of atoms=   3  estimated weight=         3.00000
+ proc =   4  # of atoms=   2  estimated weight=         2.00000
+ proc =   5  # of atoms=   2  estimated weight=         2.00000
+ proc =   6  # of atoms=   2  estimated weight=         2.00000
+ proc =   7  # of atoms=   3  estimated weight=         3.00000
+ proc =   8  # of atoms=   2  estimated weight=         2.00000
+ proc =   9  # of atoms=   2  estimated weight=         2.00000
+ proc =  10  # of atoms=   2  estimated weight=         2.00000
+ proc =  11  # of atoms=   3  estimated weight=         3.00000
+ proc =  12  # of atoms=   2  estimated weight=         2.00000
+ proc =  13  # of atoms=   2  estimated weight=         2.00000
+ proc =  14  # of atoms=   2  estimated weight=         2.00000
+ proc =  15  # of atoms=   3  estimated weight=         3.00000
+
+
+
+
+*******************************************************
+        Analysis of neighbors and setting of grids        
+*******************************************************
+
+TFNAN=    1584   Average FNAN=  44.00000
+TSNAN=       0   Average SNAN=   0.00000
+<truncation> CpyCell= 1 ct_AN=   1 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=   2 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=   3 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=   4 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=   5 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=   6 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=   7 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=   8 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=   9 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  10 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  11 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  12 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  13 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  14 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  15 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  16 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  17 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  18 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  19 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  20 FNAN SNAN  44   0
+     ..........
+     ......
+
+TFNAN=    1584   Average FNAN=  44.00000
+TSNAN=       0   Average SNAN=   0.00000
+<truncation> CpyCell= 2 ct_AN=   1 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   2 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   3 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   4 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   5 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   6 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   7 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   8 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   9 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  10 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  11 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  12 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  13 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  14 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  15 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  16 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  17 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  18 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  19 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  20 FNAN SNAN  44   0
+     ..........
+     ......
+
+TFNAN=    1584   Average FNAN=  44.00000
+TSNAN=       0   Average SNAN=   0.00000
+<truncation> CpyCell= 2 ct_AN=   1 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   2 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   3 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   4 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   5 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   6 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   7 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   8 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   9 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  10 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  11 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  12 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  13 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  14 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  15 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  16 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  17 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  18 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  19 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  20 FNAN SNAN  44   0
+     ..........
+     ......
+
+<Check_System> The system is slab.
+lattice vectors (bohr)
+A  = 19.540088731215,  0.000000000000,  0.000000000000
+B  =  0.000000000000, 19.540088731215,  0.000000000000
+C  =  0.000000000000,  0.000000000000, 37.794519771578
+reciprocal lattice vectors (bohr^-1)
+RA =  0.321553570898,  0.000000000000,  0.000000000000
+RB =  0.000000000000,  0.321553570898,  0.000000000000
+RC =  0.000000000000,  0.000000000000,  0.166245935791
+Grid_Origin -6.404281922265 -6.404806846150 -16.895050207414
+Cell_Volume =  14430.517122391884 (Bohr^3)
+GridVol     =      0.010604436451 (Bohr^3)
+Grid_Origin -6.404281922265 -6.404806846150 -16.895050207414
+Cell_Volume =  14430.517122391884 (Bohr^3)
+GridVol     =      0.010604436451 (Bohr^3)
+<UCell_Box> Info. of cutoff energy and num. of grids
+lattice vectors (bohr)
+A  = 19.540088731215,  0.000000000000,  0.000000000000
+B  =  0.000000000000, 19.540088731215,  0.000000000000
+C  =  0.000000000000,  0.000000000000, 37.794519771578
+reciprocal lattice vectors (bohr^-1)
+RA =  0.321553570898,  0.000000000000,  0.000000000000
+RB =  0.000000000000,  0.321553570898,  0.000000000000
+RC =  0.000000000000,  0.000000000000,  0.166245935791
+Required cutoff energy (Ryd) for 3D-grids = 200.0000
+    Used cutoff energy (Ryd) for 3D-grids = 209.3783, 209.3783, 195.0117
+Num. of grids of a-, b-, and c-axes = 90, 90, 168
+Grid_Origin -6.404281922265 -6.404806846150 -16.895050207414
+Cell_Volume =  14430.517122391884 (Bohr^3)
+GridVol     =      0.010604436451 (Bohr^3)
+Cell vectors (bohr) of the grid cell (gtv)
+  gtv_a =  0.217112097013,  0.000000000000,  0.000000000000
+  gtv_b =  0.000000000000,  0.217112097013,  0.000000000000
+  gtv_c =  0.000000000000,  0.000000000000,  0.224967379593
+  |gtv_a| =  0.217112097013
+  |gtv_b| =  0.217112097013
+  |gtv_c| =  0.224967379593
+Num. of grids overlapping with atom    1 = 85330
+Num. of grids overlapping with atom    2 = 85320
+Num. of grids overlapping with atom    3 = 85328
+Num. of grids overlapping with atom    4 = 85330
+Num. of grids overlapping with atom    5 = 85330
+Num. of grids overlapping with atom    6 = 85320
+Num. of grids overlapping with atom    7 = 85328
+Num. of grids overlapping with atom    8 = 85330
+Num. of grids overlapping with atom    9 = 85330
+Num. of grids overlapping with atom   10 = 85320
+Num. of grids overlapping with atom   11 = 85328
+Num. of grids overlapping with atom   12 = 85330
+Num. of grids overlapping with atom   13 = 85330
+Num. of grids overlapping with atom   14 = 85320
+Num. of grids overlapping with atom   15 = 85328
+Num. of grids overlapping with atom   16 = 85330
+Num. of grids overlapping with atom   17 = 85330
+Num. of grids overlapping with atom   18 = 85320
+Num. of grids overlapping with atom   19 = 85312
+Num. of grids overlapping with atom   20 = 85330
+     ..........
+     ......
+
+
+ Calculate S and H0 ...
+
+*******************************************************
+             SCF calculation at MD = 1                
+*******************************************************
+
+<MD= 1>  Calculation of the overlap matrix
+<MD= 1>  Calculation of the nonlocal matrix
+<MD= 1>  Calculation of the VNA projector matrix
+<Set_Hamiltonian>  Hamiltonian matrix for VNA+dVH+Vxc...
+Save the scfout file (overlap.scfout)
+
+ Finish calculating S & H0
+
+The number of threads in each node for OpenMP parallelization is 1.
+
+
+*******************************************************
+*******************************************************
+ Welcome to OpenMX   Ver. 3.9                           
+ Copyright (C), 2002-2019, T. Ozaki                    
+ OpenMX comes with ABSOLUTELY NO WARRANTY.             
+ This is free software, and you are welcome to         
+ redistribute it under the constitution of the GNU-GPL.
+*******************************************************
+*******************************************************
+
+
+
+<Input_std>  Your input file was normally read.
+<Input_std>  The system includes 1 species and 36 atoms.
+
+*******************************************************
+                     PAO and VPS                       
+*******************************************************
+
+<SetPara_DFT>  PAOs of species C were normally found.
+<SetPara_DFT>  VPSs of species C were normally found.
+               C_PBE19.vps is j-dependent.
+               In case of scf.SpinOrbit.Coupling=off,
+               j-dependent pseudo potentials are averaged by j-degeneracy,
+               which corresponds to a scalar relativistic treatment.
+
+*******************************************************
+     Fourier transform of PAO and projectors of VNL    
+*******************************************************
+
+<FT_PAO>          Fourier transform of pseudo atomic orbitals
+<FT_NLP>          Fourier transform of non-local projectors
+<FT_ProExpn_VNA>  Fourier transform of VNA separable projectors
+<FT_VNA>          Fourier transform of VNA potentials
+<FT_ProductPAO>   Fourier transform of product of PAOs
+
+*******************************************************
+  Allocation of atoms to proccesors at MD_iter=    1     
+*******************************************************
+
+ proc =   0  # of atoms=   2  estimated weight=         2.00000
+ proc =   1  # of atoms=   2  estimated weight=         2.00000
+ proc =   2  # of atoms=   2  estimated weight=         2.00000
+ proc =   3  # of atoms=   3  estimated weight=         3.00000
+ proc =   4  # of atoms=   2  estimated weight=         2.00000
+ proc =   5  # of atoms=   2  estimated weight=         2.00000
+ proc =   6  # of atoms=   2  estimated weight=         2.00000
+ proc =   7  # of atoms=   3  estimated weight=         3.00000
+ proc =   8  # of atoms=   2  estimated weight=         2.00000
+ proc =   9  # of atoms=   2  estimated weight=         2.00000
+ proc =  10  # of atoms=   2  estimated weight=         2.00000
+ proc =  11  # of atoms=   3  estimated weight=         3.00000
+ proc =  12  # of atoms=   2  estimated weight=         2.00000
+ proc =  13  # of atoms=   2  estimated weight=         2.00000
+ proc =  14  # of atoms=   2  estimated weight=         2.00000
+ proc =  15  # of atoms=   3  estimated weight=         3.00000
+
+
+
+
+*******************************************************
+        Analysis of neighbors and setting of grids        
+*******************************************************
+
+TFNAN=    1584   Average FNAN=  44.00000
+TSNAN=       0   Average SNAN=   0.00000
+<truncation> CpyCell= 1 ct_AN=   1 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=   2 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=   3 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=   4 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=   5 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=   6 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=   7 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=   8 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=   9 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  10 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  11 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  12 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  13 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  14 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  15 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  16 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  17 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  18 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  19 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  20 FNAN SNAN  44   0
+     ..........
+     ......
+
+TFNAN=    1584   Average FNAN=  44.00000
+TSNAN=       0   Average SNAN=   0.00000
+<truncation> CpyCell= 2 ct_AN=   1 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   2 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   3 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   4 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   5 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   6 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   7 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   8 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   9 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  10 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  11 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  12 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  13 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  14 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  15 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  16 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  17 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  18 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  19 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  20 FNAN SNAN  44   0
+     ..........
+     ......
+
+TFNAN=    1584   Average FNAN=  44.00000
+TSNAN=       0   Average SNAN=   0.00000
+<truncation> CpyCell= 2 ct_AN=   1 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   2 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   3 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   4 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   5 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   6 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   7 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   8 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   9 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  10 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  11 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  12 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  13 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  14 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  15 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  16 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  17 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  18 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  19 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  20 FNAN SNAN  44   0
+     ..........
+     ......
+
+<Check_System> The system is slab.
+lattice vectors (bohr)
+A  = 19.540088731215,  0.000000000000,  0.000000000000
+B  =  0.000000000000, 19.540088731215,  0.000000000000
+C  =  0.000000000000,  0.000000000000, 37.794519771578
+reciprocal lattice vectors (bohr^-1)
+RA =  0.321553570898,  0.000000000000,  0.000000000000
+RB =  0.000000000000,  0.321553570898,  0.000000000000
+RC =  0.000000000000,  0.000000000000,  0.166245935791
+Grid_Origin -6.404806846150 -6.404281922265 -16.895050207414
+Cell_Volume =  14430.517122391884 (Bohr^3)
+GridVol     =      0.010604436451 (Bohr^3)
+Grid_Origin -6.404806846150 -6.404281922265 -16.895050207414
+Cell_Volume =  14430.517122391884 (Bohr^3)
+GridVol     =      0.010604436451 (Bohr^3)
+<UCell_Box> Info. of cutoff energy and num. of grids
+lattice vectors (bohr)
+A  = 19.540088731215,  0.000000000000,  0.000000000000
+B  =  0.000000000000, 19.540088731215,  0.000000000000
+C  =  0.000000000000,  0.000000000000, 37.794519771578
+reciprocal lattice vectors (bohr^-1)
+RA =  0.321553570898,  0.000000000000,  0.000000000000
+RB =  0.000000000000,  0.321553570898,  0.000000000000
+RC =  0.000000000000,  0.000000000000,  0.166245935791
+Required cutoff energy (Ryd) for 3D-grids = 200.0000
+    Used cutoff energy (Ryd) for 3D-grids = 209.3783, 209.3783, 195.0117
+Num. of grids of a-, b-, and c-axes = 90, 90, 168
+Grid_Origin -6.404806846150 -6.404281922265 -16.895050207414
+Cell_Volume =  14430.517122391884 (Bohr^3)
+GridVol     =      0.010604436451 (Bohr^3)
+Cell vectors (bohr) of the grid cell (gtv)
+  gtv_a =  0.217112097013,  0.000000000000,  0.000000000000
+  gtv_b =  0.000000000000,  0.217112097013,  0.000000000000
+  gtv_c =  0.000000000000,  0.000000000000,  0.224967379593
+  |gtv_a| =  0.217112097013
+  |gtv_b| =  0.217112097013
+  |gtv_c| =  0.224967379593
+Num. of grids overlapping with atom    1 = 85320
+Num. of grids overlapping with atom    2 = 85330
+Num. of grids overlapping with atom    3 = 85330
+Num. of grids overlapping with atom    4 = 85328
+Num. of grids overlapping with atom    5 = 85320
+Num. of grids overlapping with atom    6 = 85330
+Num. of grids overlapping with atom    7 = 85330
+Num. of grids overlapping with atom    8 = 85328
+Num. of grids overlapping with atom    9 = 85320
+Num. of grids overlapping with atom   10 = 85330
+Num. of grids overlapping with atom   11 = 85330
+Num. of grids overlapping with atom   12 = 85328
+Num. of grids overlapping with atom   13 = 85320
+Num. of grids overlapping with atom   14 = 85330
+Num. of grids overlapping with atom   15 = 85330
+Num. of grids overlapping with atom   16 = 85328
+Num. of grids overlapping with atom   17 = 85320
+Num. of grids overlapping with atom   18 = 85330
+Num. of grids overlapping with atom   19 = 85288
+Num. of grids overlapping with atom   20 = 85328
+     ..........
+     ......
+
+
+ Calculate S and H0 ...
+
+*******************************************************
+             SCF calculation at MD = 1                
+*******************************************************
+
+<MD= 1>  Calculation of the overlap matrix
+<MD= 1>  Calculation of the nonlocal matrix
+<MD= 1>  Calculation of the VNA projector matrix
+<Set_Hamiltonian>  Hamiltonian matrix for VNA+dVH+Vxc...
+Save the scfout file (overlap.scfout)
+
+ Finish calculating S & H0
+
+The number of threads in each node for OpenMP parallelization is 1.
+
+
+*******************************************************
+*******************************************************
+ Welcome to OpenMX   Ver. 3.9                           
+ Copyright (C), 2002-2019, T. Ozaki                    
+ OpenMX comes with ABSOLUTELY NO WARRANTY.             
+ This is free software, and you are welcome to         
+ redistribute it under the constitution of the GNU-GPL.
+*******************************************************
+*******************************************************
+
+
+
+<Input_std>  Your input file was normally read.
+<Input_std>  The system includes 1 species and 36 atoms.
+
+*******************************************************
+                     PAO and VPS                       
+*******************************************************
+
+<SetPara_DFT>  PAOs of species C were normally found.
+<SetPara_DFT>  VPSs of species C were normally found.
+               C_PBE19.vps is j-dependent.
+               In case of scf.SpinOrbit.Coupling=off,
+               j-dependent pseudo potentials are averaged by j-degeneracy,
+               which corresponds to a scalar relativistic treatment.
+
+*******************************************************
+     Fourier transform of PAO and projectors of VNL    
+*******************************************************
+
+<FT_PAO>          Fourier transform of pseudo atomic orbitals
+<FT_NLP>          Fourier transform of non-local projectors
+<FT_ProExpn_VNA>  Fourier transform of VNA separable projectors
+<FT_VNA>          Fourier transform of VNA potentials
+<FT_ProductPAO>   Fourier transform of product of PAOs
+
+*******************************************************
+  Allocation of atoms to proccesors at MD_iter=    1     
+*******************************************************
+
+ proc =   0  # of atoms=   2  estimated weight=         2.00000
+ proc =   1  # of atoms=   2  estimated weight=         2.00000
+ proc =   2  # of atoms=   2  estimated weight=         2.00000
+ proc =   3  # of atoms=   3  estimated weight=         3.00000
+ proc =   4  # of atoms=   2  estimated weight=         2.00000
+ proc =   5  # of atoms=   2  estimated weight=         2.00000
+ proc =   6  # of atoms=   2  estimated weight=         2.00000
+ proc =   7  # of atoms=   3  estimated weight=         3.00000
+ proc =   8  # of atoms=   2  estimated weight=         2.00000
+ proc =   9  # of atoms=   2  estimated weight=         2.00000
+ proc =  10  # of atoms=   2  estimated weight=         2.00000
+ proc =  11  # of atoms=   3  estimated weight=         3.00000
+ proc =  12  # of atoms=   2  estimated weight=         2.00000
+ proc =  13  # of atoms=   2  estimated weight=         2.00000
+ proc =  14  # of atoms=   2  estimated weight=         2.00000
+ proc =  15  # of atoms=   3  estimated weight=         3.00000
+
+
+
+
+*******************************************************
+        Analysis of neighbors and setting of grids        
+*******************************************************
+
+TFNAN=    1584   Average FNAN=  44.00000
+TSNAN=       0   Average SNAN=   0.00000
+<truncation> CpyCell= 1 ct_AN=   1 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=   2 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=   3 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=   4 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=   5 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=   6 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=   7 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=   8 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=   9 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  10 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  11 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  12 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  13 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  14 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  15 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  16 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  17 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  18 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  19 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  20 FNAN SNAN  44   0
+     ..........
+     ......
+
+TFNAN=    1584   Average FNAN=  44.00000
+TSNAN=       0   Average SNAN=   0.00000
+<truncation> CpyCell= 2 ct_AN=   1 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   2 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   3 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   4 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   5 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   6 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   7 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   8 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   9 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  10 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  11 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  12 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  13 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  14 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  15 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  16 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  17 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  18 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  19 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  20 FNAN SNAN  44   0
+     ..........
+     ......
+
+TFNAN=    1584   Average FNAN=  44.00000
+TSNAN=       0   Average SNAN=   0.00000
+<truncation> CpyCell= 2 ct_AN=   1 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   2 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   3 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   4 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   5 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   6 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   7 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   8 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   9 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  10 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  11 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  12 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  13 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  14 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  15 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  16 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  17 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  18 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  19 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  20 FNAN SNAN  44   0
+     ..........
+     ......
+
+<Check_System> The system is slab.
+lattice vectors (bohr)
+A  = 19.540088731215,  0.000000000000,  0.000000000000
+B  =  0.000000000000, 19.540088731215,  0.000000000000
+C  =  0.000000000000,  0.000000000000, 37.794519771578
+reciprocal lattice vectors (bohr^-1)
+RA =  0.321553570898,  0.000000000000,  0.000000000000
+RB =  0.000000000000,  0.321553570898,  0.000000000000
+RC =  0.000000000000,  0.000000000000,  0.166245935791
+Grid_Origin -6.404806846150 -6.404806846150 -16.894525283528
+Cell_Volume =  14430.517122391884 (Bohr^3)
+GridVol     =      0.010604436451 (Bohr^3)
+Grid_Origin -6.404806846150 -6.404806846150 -16.894525283528
+Cell_Volume =  14430.517122391884 (Bohr^3)
+GridVol     =      0.010604436451 (Bohr^3)
+<UCell_Box> Info. of cutoff energy and num. of grids
+lattice vectors (bohr)
+A  = 19.540088731215,  0.000000000000,  0.000000000000
+B  =  0.000000000000, 19.540088731215,  0.000000000000
+C  =  0.000000000000,  0.000000000000, 37.794519771578
+reciprocal lattice vectors (bohr^-1)
+RA =  0.321553570898,  0.000000000000,  0.000000000000
+RB =  0.000000000000,  0.321553570898,  0.000000000000
+RC =  0.000000000000,  0.000000000000,  0.166245935791
+Required cutoff energy (Ryd) for 3D-grids = 200.0000
+    Used cutoff energy (Ryd) for 3D-grids = 209.3783, 209.3783, 195.0117
+Num. of grids of a-, b-, and c-axes = 90, 90, 168
+Grid_Origin -6.404806846150 -6.404806846150 -16.894525283528
+Cell_Volume =  14430.517122391884 (Bohr^3)
+GridVol     =      0.010604436451 (Bohr^3)
+Cell vectors (bohr) of the grid cell (gtv)
+  gtv_a =  0.217112097013,  0.000000000000,  0.000000000000
+  gtv_b =  0.000000000000,  0.217112097013,  0.000000000000
+  gtv_c =  0.000000000000,  0.000000000000,  0.224967379593
+  |gtv_a| =  0.217112097013
+  |gtv_b| =  0.217112097013
+  |gtv_c| =  0.224967379593
+Num. of grids overlapping with atom    1 = 85324
+Num. of grids overlapping with atom    2 = 85324
+Num. of grids overlapping with atom    3 = 85324
+Num. of grids overlapping with atom    4 = 85324
+Num. of grids overlapping with atom    5 = 85324
+Num. of grids overlapping with atom    6 = 85324
+Num. of grids overlapping with atom    7 = 85324
+Num. of grids overlapping with atom    8 = 85324
+Num. of grids overlapping with atom    9 = 85324
+Num. of grids overlapping with atom   10 = 85324
+Num. of grids overlapping with atom   11 = 85324
+Num. of grids overlapping with atom   12 = 85324
+Num. of grids overlapping with atom   13 = 85324
+Num. of grids overlapping with atom   14 = 85324
+Num. of grids overlapping with atom   15 = 85324
+Num. of grids overlapping with atom   16 = 85324
+Num. of grids overlapping with atom   17 = 85324
+Num. of grids overlapping with atom   18 = 85324
+Num. of grids overlapping with atom   19 = 85278
+Num. of grids overlapping with atom   20 = 85324
+     ..........
+     ......
+
+
+ Calculate S and H0 ...
+
+*******************************************************
+             SCF calculation at MD = 1                
+*******************************************************
+
+<MD= 1>  Calculation of the overlap matrix
+<MD= 1>  Calculation of the nonlocal matrix
+<MD= 1>  Calculation of the VNA projector matrix
+<Set_Hamiltonian>  Hamiltonian matrix for VNA+dVH+Vxc...
+Save the scfout file (overlap.scfout)
+
+ Finish calculating S & H0
+
+The number of threads in each node for OpenMP parallelization is 1.
+
+
+*******************************************************
+*******************************************************
+ Welcome to OpenMX   Ver. 3.9                           
+ Copyright (C), 2002-2019, T. Ozaki                    
+ OpenMX comes with ABSOLUTELY NO WARRANTY.             
+ This is free software, and you are welcome to         
+ redistribute it under the constitution of the GNU-GPL.
+*******************************************************
+*******************************************************
+
+
+
+<Input_std>  Your input file was normally read.
+<Input_std>  The system includes 1 species and 36 atoms.
+
+*******************************************************
+                     PAO and VPS                       
+*******************************************************
+
+<SetPara_DFT>  PAOs of species C were normally found.
+<SetPara_DFT>  VPSs of species C were normally found.
+               C_PBE19.vps is j-dependent.
+               In case of scf.SpinOrbit.Coupling=off,
+               j-dependent pseudo potentials are averaged by j-degeneracy,
+               which corresponds to a scalar relativistic treatment.
+
+*******************************************************
+     Fourier transform of PAO and projectors of VNL    
+*******************************************************
+
+<FT_PAO>          Fourier transform of pseudo atomic orbitals
+<FT_NLP>          Fourier transform of non-local projectors
+<FT_ProExpn_VNA>  Fourier transform of VNA separable projectors
+<FT_VNA>          Fourier transform of VNA potentials
+<FT_ProductPAO>   Fourier transform of product of PAOs
+
+*******************************************************
+  Allocation of atoms to proccesors at MD_iter=    1     
+*******************************************************
+
+ proc =   0  # of atoms=   2  estimated weight=         2.00000
+ proc =   1  # of atoms=   2  estimated weight=         2.00000
+ proc =   2  # of atoms=   2  estimated weight=         2.00000
+ proc =   3  # of atoms=   3  estimated weight=         3.00000
+ proc =   4  # of atoms=   2  estimated weight=         2.00000
+ proc =   5  # of atoms=   2  estimated weight=         2.00000
+ proc =   6  # of atoms=   2  estimated weight=         2.00000
+ proc =   7  # of atoms=   3  estimated weight=         3.00000
+ proc =   8  # of atoms=   2  estimated weight=         2.00000
+ proc =   9  # of atoms=   2  estimated weight=         2.00000
+ proc =  10  # of atoms=   2  estimated weight=         2.00000
+ proc =  11  # of atoms=   3  estimated weight=         3.00000
+ proc =  12  # of atoms=   2  estimated weight=         2.00000
+ proc =  13  # of atoms=   2  estimated weight=         2.00000
+ proc =  14  # of atoms=   2  estimated weight=         2.00000
+ proc =  15  # of atoms=   3  estimated weight=         3.00000
+
+
+
+
+*******************************************************
+        Analysis of neighbors and setting of grids        
+*******************************************************
+
+TFNAN=    1584   Average FNAN=  44.00000
+TSNAN=       0   Average SNAN=   0.00000
+<truncation> CpyCell= 1 ct_AN=   1 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=   2 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=   3 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=   4 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=   5 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=   6 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=   7 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=   8 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=   9 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  10 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  11 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  12 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  13 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  14 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  15 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  16 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  17 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  18 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  19 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  20 FNAN SNAN  44   0
+     ..........
+     ......
+
+TFNAN=    1584   Average FNAN=  44.00000
+TSNAN=       0   Average SNAN=   0.00000
+<truncation> CpyCell= 2 ct_AN=   1 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   2 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   3 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   4 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   5 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   6 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   7 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   8 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   9 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  10 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  11 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  12 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  13 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  14 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  15 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  16 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  17 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  18 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  19 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  20 FNAN SNAN  44   0
+     ..........
+     ......
+
+TFNAN=    1584   Average FNAN=  44.00000
+TSNAN=       0   Average SNAN=   0.00000
+<truncation> CpyCell= 2 ct_AN=   1 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   2 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   3 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   4 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   5 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   6 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   7 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   8 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   9 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  10 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  11 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  12 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  13 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  14 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  15 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  16 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  17 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  18 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  19 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  20 FNAN SNAN  44   0
+     ..........
+     ......
+
+<Check_System> The system is slab.
+lattice vectors (bohr)
+A  = 19.540088731215,  0.000000000000,  0.000000000000
+B  =  0.000000000000, 19.540088731215,  0.000000000000
+C  =  0.000000000000,  0.000000000000, 37.794519771578
+reciprocal lattice vectors (bohr^-1)
+RA =  0.321553570898,  0.000000000000,  0.000000000000
+RB =  0.000000000000,  0.321553570898,  0.000000000000
+RC =  0.000000000000,  0.000000000000,  0.166245935791
+Grid_Origin -6.404281922265 -6.404806846150 -16.895050207414
+Cell_Volume =  14430.517122391884 (Bohr^3)
+GridVol     =      0.010604436451 (Bohr^3)
+Grid_Origin -6.404281922265 -6.404806846150 -16.895050207414
+Cell_Volume =  14430.517122391884 (Bohr^3)
+GridVol     =      0.010604436451 (Bohr^3)
+<UCell_Box> Info. of cutoff energy and num. of grids
+lattice vectors (bohr)
+A  = 19.540088731215,  0.000000000000,  0.000000000000
+B  =  0.000000000000, 19.540088731215,  0.000000000000
+C  =  0.000000000000,  0.000000000000, 37.794519771578
+reciprocal lattice vectors (bohr^-1)
+RA =  0.321553570898,  0.000000000000,  0.000000000000
+RB =  0.000000000000,  0.321553570898,  0.000000000000
+RC =  0.000000000000,  0.000000000000,  0.166245935791
+Required cutoff energy (Ryd) for 3D-grids = 200.0000
+    Used cutoff energy (Ryd) for 3D-grids = 209.3783, 209.3783, 195.0117
+Num. of grids of a-, b-, and c-axes = 90, 90, 168
+Grid_Origin -6.404281922265 -6.404806846150 -16.895050207414
+Cell_Volume =  14430.517122391884 (Bohr^3)
+GridVol     =      0.010604436451 (Bohr^3)
+Cell vectors (bohr) of the grid cell (gtv)
+  gtv_a =  0.217112097013,  0.000000000000,  0.000000000000
+  gtv_b =  0.000000000000,  0.217112097013,  0.000000000000
+  gtv_c =  0.000000000000,  0.000000000000,  0.224967379593
+  |gtv_a| =  0.217112097013
+  |gtv_b| =  0.217112097013
+  |gtv_c| =  0.224967379593
+Num. of grids overlapping with atom    1 = 85330
+Num. of grids overlapping with atom    2 = 85320
+Num. of grids overlapping with atom    3 = 85328
+Num. of grids overlapping with atom    4 = 85330
+Num. of grids overlapping with atom    5 = 85330
+Num. of grids overlapping with atom    6 = 85320
+Num. of grids overlapping with atom    7 = 85328
+Num. of grids overlapping with atom    8 = 85330
+Num. of grids overlapping with atom    9 = 85330
+Num. of grids overlapping with atom   10 = 85320
+Num. of grids overlapping with atom   11 = 85328
+Num. of grids overlapping with atom   12 = 85330
+Num. of grids overlapping with atom   13 = 85330
+Num. of grids overlapping with atom   14 = 85320
+Num. of grids overlapping with atom   15 = 85328
+Num. of grids overlapping with atom   16 = 85330
+Num. of grids overlapping with atom   17 = 85330
+Num. of grids overlapping with atom   18 = 85320
+Num. of grids overlapping with atom   19 = 85328
+Num. of grids overlapping with atom   20 = 85288
+     ..........
+     ......
+
+
+ Calculate S and H0 ...
+
+*******************************************************
+             SCF calculation at MD = 1                
+*******************************************************
+
+<MD= 1>  Calculation of the overlap matrix
+<MD= 1>  Calculation of the nonlocal matrix
+<MD= 1>  Calculation of the VNA projector matrix
+<Set_Hamiltonian>  Hamiltonian matrix for VNA+dVH+Vxc...
+Save the scfout file (overlap.scfout)
+
+ Finish calculating S & H0
+
+The number of threads in each node for OpenMP parallelization is 1.
+
+
+*******************************************************
+*******************************************************
+ Welcome to OpenMX   Ver. 3.9                           
+ Copyright (C), 2002-2019, T. Ozaki                    
+ OpenMX comes with ABSOLUTELY NO WARRANTY.             
+ This is free software, and you are welcome to         
+ redistribute it under the constitution of the GNU-GPL.
+*******************************************************
+*******************************************************
+
+
+
+<Input_std>  Your input file was normally read.
+<Input_std>  The system includes 1 species and 36 atoms.
+
+*******************************************************
+                     PAO and VPS                       
+*******************************************************
+
+<SetPara_DFT>  PAOs of species C were normally found.
+<SetPara_DFT>  VPSs of species C were normally found.
+               C_PBE19.vps is j-dependent.
+               In case of scf.SpinOrbit.Coupling=off,
+               j-dependent pseudo potentials are averaged by j-degeneracy,
+               which corresponds to a scalar relativistic treatment.
+
+*******************************************************
+     Fourier transform of PAO and projectors of VNL    
+*******************************************************
+
+<FT_PAO>          Fourier transform of pseudo atomic orbitals
+<FT_NLP>          Fourier transform of non-local projectors
+<FT_ProExpn_VNA>  Fourier transform of VNA separable projectors
+<FT_VNA>          Fourier transform of VNA potentials
+<FT_ProductPAO>   Fourier transform of product of PAOs
+
+*******************************************************
+  Allocation of atoms to proccesors at MD_iter=    1     
+*******************************************************
+
+ proc =   0  # of atoms=   2  estimated weight=         2.00000
+ proc =   1  # of atoms=   2  estimated weight=         2.00000
+ proc =   2  # of atoms=   2  estimated weight=         2.00000
+ proc =   3  # of atoms=   3  estimated weight=         3.00000
+ proc =   4  # of atoms=   2  estimated weight=         2.00000
+ proc =   5  # of atoms=   2  estimated weight=         2.00000
+ proc =   6  # of atoms=   2  estimated weight=         2.00000
+ proc =   7  # of atoms=   3  estimated weight=         3.00000
+ proc =   8  # of atoms=   2  estimated weight=         2.00000
+ proc =   9  # of atoms=   2  estimated weight=         2.00000
+ proc =  10  # of atoms=   2  estimated weight=         2.00000
+ proc =  11  # of atoms=   3  estimated weight=         3.00000
+ proc =  12  # of atoms=   2  estimated weight=         2.00000
+ proc =  13  # of atoms=   2  estimated weight=         2.00000
+ proc =  14  # of atoms=   2  estimated weight=         2.00000
+ proc =  15  # of atoms=   3  estimated weight=         3.00000
+
+
+
+
+*******************************************************
+        Analysis of neighbors and setting of grids        
+*******************************************************
+
+TFNAN=    1584   Average FNAN=  44.00000
+TSNAN=       0   Average SNAN=   0.00000
+<truncation> CpyCell= 1 ct_AN=   1 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=   2 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=   3 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=   4 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=   5 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=   6 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=   7 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=   8 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=   9 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  10 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  11 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  12 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  13 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  14 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  15 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  16 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  17 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  18 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  19 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  20 FNAN SNAN  44   0
+     ..........
+     ......
+
+TFNAN=    1584   Average FNAN=  44.00000
+TSNAN=       0   Average SNAN=   0.00000
+<truncation> CpyCell= 2 ct_AN=   1 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   2 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   3 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   4 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   5 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   6 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   7 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   8 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   9 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  10 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  11 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  12 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  13 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  14 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  15 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  16 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  17 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  18 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  19 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  20 FNAN SNAN  44   0
+     ..........
+     ......
+
+TFNAN=    1584   Average FNAN=  44.00000
+TSNAN=       0   Average SNAN=   0.00000
+<truncation> CpyCell= 2 ct_AN=   1 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   2 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   3 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   4 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   5 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   6 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   7 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   8 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   9 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  10 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  11 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  12 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  13 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  14 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  15 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  16 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  17 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  18 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  19 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  20 FNAN SNAN  44   0
+     ..........
+     ......
+
+<Check_System> The system is slab.
+lattice vectors (bohr)
+A  = 19.540088731215,  0.000000000000,  0.000000000000
+B  =  0.000000000000, 19.540088731215,  0.000000000000
+C  =  0.000000000000,  0.000000000000, 37.794519771578
+reciprocal lattice vectors (bohr^-1)
+RA =  0.321553570898,  0.000000000000,  0.000000000000
+RB =  0.000000000000,  0.321553570898,  0.000000000000
+RC =  0.000000000000,  0.000000000000,  0.166245935791
+Grid_Origin -6.404806846150 -6.404281922265 -16.895050207414
+Cell_Volume =  14430.517122391884 (Bohr^3)
+GridVol     =      0.010604436451 (Bohr^3)
+Grid_Origin -6.404806846150 -6.404281922265 -16.895050207414
+Cell_Volume =  14430.517122391884 (Bohr^3)
+GridVol     =      0.010604436451 (Bohr^3)
+<UCell_Box> Info. of cutoff energy and num. of grids
+lattice vectors (bohr)
+A  = 19.540088731215,  0.000000000000,  0.000000000000
+B  =  0.000000000000, 19.540088731215,  0.000000000000
+C  =  0.000000000000,  0.000000000000, 37.794519771578
+reciprocal lattice vectors (bohr^-1)
+RA =  0.321553570898,  0.000000000000,  0.000000000000
+RB =  0.000000000000,  0.321553570898,  0.000000000000
+RC =  0.000000000000,  0.000000000000,  0.166245935791
+Required cutoff energy (Ryd) for 3D-grids = 200.0000
+    Used cutoff energy (Ryd) for 3D-grids = 209.3783, 209.3783, 195.0117
+Num. of grids of a-, b-, and c-axes = 90, 90, 168
+Grid_Origin -6.404806846150 -6.404281922265 -16.895050207414
+Cell_Volume =  14430.517122391884 (Bohr^3)
+GridVol     =      0.010604436451 (Bohr^3)
+Cell vectors (bohr) of the grid cell (gtv)
+  gtv_a =  0.217112097013,  0.000000000000,  0.000000000000
+  gtv_b =  0.000000000000,  0.217112097013,  0.000000000000
+  gtv_c =  0.000000000000,  0.000000000000,  0.224967379593
+  |gtv_a| =  0.217112097013
+  |gtv_b| =  0.217112097013
+  |gtv_c| =  0.224967379593
+Num. of grids overlapping with atom    1 = 85320
+Num. of grids overlapping with atom    2 = 85330
+Num. of grids overlapping with atom    3 = 85330
+Num. of grids overlapping with atom    4 = 85328
+Num. of grids overlapping with atom    5 = 85320
+Num. of grids overlapping with atom    6 = 85330
+Num. of grids overlapping with atom    7 = 85330
+Num. of grids overlapping with atom    8 = 85328
+Num. of grids overlapping with atom    9 = 85320
+Num. of grids overlapping with atom   10 = 85330
+Num. of grids overlapping with atom   11 = 85330
+Num. of grids overlapping with atom   12 = 85328
+Num. of grids overlapping with atom   13 = 85320
+Num. of grids overlapping with atom   14 = 85330
+Num. of grids overlapping with atom   15 = 85330
+Num. of grids overlapping with atom   16 = 85328
+Num. of grids overlapping with atom   17 = 85320
+Num. of grids overlapping with atom   18 = 85330
+Num. of grids overlapping with atom   19 = 85330
+Num. of grids overlapping with atom   20 = 85312
+     ..........
+     ......
+
+
+ Calculate S and H0 ...
+
+*******************************************************
+             SCF calculation at MD = 1                
+*******************************************************
+
+<MD= 1>  Calculation of the overlap matrix
+<MD= 1>  Calculation of the nonlocal matrix
+<MD= 1>  Calculation of the VNA projector matrix
+<Set_Hamiltonian>  Hamiltonian matrix for VNA+dVH+Vxc...
+Save the scfout file (overlap.scfout)
+
+ Finish calculating S & H0
+
+The number of threads in each node for OpenMP parallelization is 1.
+
+
+*******************************************************
+*******************************************************
+ Welcome to OpenMX   Ver. 3.9                           
+ Copyright (C), 2002-2019, T. Ozaki                    
+ OpenMX comes with ABSOLUTELY NO WARRANTY.             
+ This is free software, and you are welcome to         
+ redistribute it under the constitution of the GNU-GPL.
+*******************************************************
+*******************************************************
+
+
+
+<Input_std>  Your input file was normally read.
+<Input_std>  The system includes 1 species and 36 atoms.
+
+*******************************************************
+                     PAO and VPS                       
+*******************************************************
+
+<SetPara_DFT>  PAOs of species C were normally found.
+<SetPara_DFT>  VPSs of species C were normally found.
+               C_PBE19.vps is j-dependent.
+               In case of scf.SpinOrbit.Coupling=off,
+               j-dependent pseudo potentials are averaged by j-degeneracy,
+               which corresponds to a scalar relativistic treatment.
+
+*******************************************************
+     Fourier transform of PAO and projectors of VNL    
+*******************************************************
+
+<FT_PAO>          Fourier transform of pseudo atomic orbitals
+<FT_NLP>          Fourier transform of non-local projectors
+<FT_ProExpn_VNA>  Fourier transform of VNA separable projectors
+<FT_VNA>          Fourier transform of VNA potentials
+<FT_ProductPAO>   Fourier transform of product of PAOs
+
+*******************************************************
+  Allocation of atoms to proccesors at MD_iter=    1     
+*******************************************************
+
+ proc =   0  # of atoms=   2  estimated weight=         2.00000
+ proc =   1  # of atoms=   2  estimated weight=         2.00000
+ proc =   2  # of atoms=   2  estimated weight=         2.00000
+ proc =   3  # of atoms=   3  estimated weight=         3.00000
+ proc =   4  # of atoms=   2  estimated weight=         2.00000
+ proc =   5  # of atoms=   2  estimated weight=         2.00000
+ proc =   6  # of atoms=   2  estimated weight=         2.00000
+ proc =   7  # of atoms=   3  estimated weight=         3.00000
+ proc =   8  # of atoms=   2  estimated weight=         2.00000
+ proc =   9  # of atoms=   2  estimated weight=         2.00000
+ proc =  10  # of atoms=   2  estimated weight=         2.00000
+ proc =  11  # of atoms=   3  estimated weight=         3.00000
+ proc =  12  # of atoms=   2  estimated weight=         2.00000
+ proc =  13  # of atoms=   2  estimated weight=         2.00000
+ proc =  14  # of atoms=   2  estimated weight=         2.00000
+ proc =  15  # of atoms=   3  estimated weight=         3.00000
+
+
+
+
+*******************************************************
+        Analysis of neighbors and setting of grids        
+*******************************************************
+
+TFNAN=    1584   Average FNAN=  44.00000
+TSNAN=       0   Average SNAN=   0.00000
+<truncation> CpyCell= 1 ct_AN=   1 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=   2 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=   3 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=   4 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=   5 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=   6 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=   7 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=   8 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=   9 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  10 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  11 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  12 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  13 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  14 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  15 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  16 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  17 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  18 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  19 FNAN SNAN  44   0
+<truncation> CpyCell= 1 ct_AN=  20 FNAN SNAN  44   0
+     ..........
+     ......
+
+TFNAN=    1584   Average FNAN=  44.00000
+TSNAN=       0   Average SNAN=   0.00000
+<truncation> CpyCell= 2 ct_AN=   1 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   2 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   3 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   4 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   5 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   6 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   7 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   8 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   9 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  10 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  11 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  12 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  13 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  14 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  15 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  16 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  17 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  18 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  19 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  20 FNAN SNAN  44   0
+     ..........
+     ......
+
+TFNAN=    1584   Average FNAN=  44.00000
+TSNAN=       0   Average SNAN=   0.00000
+<truncation> CpyCell= 2 ct_AN=   1 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   2 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   3 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   4 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   5 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   6 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   7 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   8 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=   9 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  10 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  11 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  12 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  13 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  14 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  15 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  16 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  17 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  18 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  19 FNAN SNAN  44   0
+<truncation> CpyCell= 2 ct_AN=  20 FNAN SNAN  44   0
+     ..........
+     ......
+
+<Check_System> The system is slab.
+lattice vectors (bohr)
+A  = 19.540088731215,  0.000000000000,  0.000000000000
+B  =  0.000000000000, 19.540088731215,  0.000000000000
+C  =  0.000000000000,  0.000000000000, 37.794519771578
+reciprocal lattice vectors (bohr^-1)
+RA =  0.321553570898,  0.000000000000,  0.000000000000
+RB =  0.000000000000,  0.321553570898,  0.000000000000
+RC =  0.000000000000,  0.000000000000,  0.166245935791
+Grid_Origin -6.404806846150 -6.404806846150 -16.894525283528
+Cell_Volume =  14430.517122391884 (Bohr^3)
+GridVol     =      0.010604436451 (Bohr^3)
+Grid_Origin -6.404806846150 -6.404806846150 -16.894525283528
+Cell_Volume =  14430.517122391884 (Bohr^3)
+GridVol     =      0.010604436451 (Bohr^3)
+<UCell_Box> Info. of cutoff energy and num. of grids
+lattice vectors (bohr)
+A  = 19.540088731215,  0.000000000000,  0.000000000000
+B  =  0.000000000000, 19.540088731215,  0.000000000000
+C  =  0.000000000000,  0.000000000000, 37.794519771578
+reciprocal lattice vectors (bohr^-1)
+RA =  0.321553570898,  0.000000000000,  0.000000000000
+RB =  0.000000000000,  0.321553570898,  0.000000000000
+RC =  0.000000000000,  0.000000000000,  0.166245935791
+Required cutoff energy (Ryd) for 3D-grids = 200.0000
+    Used cutoff energy (Ryd) for 3D-grids = 209.3783, 209.3783, 195.0117
+Num. of grids of a-, b-, and c-axes = 90, 90, 168
+Grid_Origin -6.404806846150 -6.404806846150 -16.894525283528
+Cell_Volume =  14430.517122391884 (Bohr^3)
+GridVol     =      0.010604436451 (Bohr^3)
+Cell vectors (bohr) of the grid cell (gtv)
+  gtv_a =  0.217112097013,  0.000000000000,  0.000000000000
+  gtv_b =  0.000000000000,  0.217112097013,  0.000000000000
+  gtv_c =  0.000000000000,  0.000000000000,  0.224967379593
+  |gtv_a| =  0.217112097013
+  |gtv_b| =  0.217112097013
+  |gtv_c| =  0.224967379593
+Num. of grids overlapping with atom    1 = 85324
+Num. of grids overlapping with atom    2 = 85324
+Num. of grids overlapping with atom    3 = 85324
+Num. of grids overlapping with atom    4 = 85324
+Num. of grids overlapping with atom    5 = 85324
+Num. of grids overlapping with atom    6 = 85324
+Num. of grids overlapping with atom    7 = 85324
+Num. of grids overlapping with atom    8 = 85324
+Num. of grids overlapping with atom    9 = 85324
+Num. of grids overlapping with atom   10 = 85324
+Num. of grids overlapping with atom   11 = 85324
+Num. of grids overlapping with atom   12 = 85324
+Num. of grids overlapping with atom   13 = 85324
+Num. of grids overlapping with atom   14 = 85324
+Num. of grids overlapping with atom   15 = 85324
+Num. of grids overlapping with atom   16 = 85324
+Num. of grids overlapping with atom   17 = 85324
+Num. of grids overlapping with atom   18 = 85324
+Num. of grids overlapping with atom   19 = 85324
+Num. of grids overlapping with atom   20 = 85278
+     ..........
+     ......
+
+
+ Calculate S and H0 ...
+
+*******************************************************
+             SCF calculation at MD = 1                
+*******************************************************
+
+<MD= 1>  Calculation of the overlap matrix
+<MD= 1>  Calculation of the nonlocal matrix
+<MD= 1>  Calculation of the VNA projector matrix
+<Set_Hamiltonian>  Hamiltonian matrix for VNA+dVH+Vxc...
+Save the scfout file (overlap.scfout)
+
+ Finish calculating S & H0
